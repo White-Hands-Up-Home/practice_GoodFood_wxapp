@@ -41,7 +41,7 @@
               "pagePath": "pages/shop/shop",
               "text": "店铺",
               "iconPath": "./images1/我的 (1).png",
-              "selectedIconPath": ""
+              "selectedIconPath": "./images1/我的.png"
           },
           {
               "pagePath": "pages/woDe/woDe",
