@@ -2,7 +2,7 @@
   "pages": [
     "pages/guangChang/guangChang",
     "pages/faBu/faBu",
-    "pages/dianPu/dianPu",
+    "pages/shop/shop",
     "pages/woDe/woDe"
 
     
@@ -38,7 +38,7 @@
               "selectedIconPath": ""
           },
           {
-              "pagePath": "pages/dianPu/dianPu",
+              "pagePath": "pages/shop/shop",
               "text": "店铺",
               "iconPath": "./images1/我的 (1).png",
               "selectedIconPath": ""
