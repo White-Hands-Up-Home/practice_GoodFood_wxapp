@@ -1,0 +1,14 @@
+<!--pages/guangChang/gunagChang.wxml-->
+<view class="check">吃乎评价</view>
+
+<scroll-view class="evaluation" scroll-y>
+<view class="stores" wx:for="{{stores}}" wx:key="id"> 
+  {{name}}  {{price}}
+</view>
+</scroll-view>
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/guangChang/guangChang",
+    "pages/faBu/faBu",
+    "pages/dianPu/dianPu",
+    "pages/woDe/woDe"
+
+    
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "珈有好食",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+
+  "tabBar": {
+      "backgroundColor": "#2b4b6b",
+      "borderStyle": "white",
+      "color": "",
+      "selectedColor": "",
+      "list": [
+          {
+              "pagePath": "pages/guangChang/guangChang",
+              "text": "广场",
+              "iconPath": "",
+              "selectedIconPath": ""
+          },
+          {
+              "pagePath": "pages/faBu/faBu",
+              "text": "发布",
+              "iconPath": "",
+              "selectedIconPath": ""
+          },
+          {
+              "pagePath": "pages/dianPu/dianPu",
+              "text": "店铺",
+              "iconPath": "./images1/我的 (1).png",
+              "selectedIconPath": ""
+          },
+          {
+              "pagePath": "pages/woDe/woDe",
+              "text": "我的",
+              "iconPath": "",
+              "selectedIconPath": ""
+          }
+      ]
+  }
+}
