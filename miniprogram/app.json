@@ -46,8 +46,8 @@
           {
               "pagePath": "pages/woDe/woDe",
               "text": "我的",
-              "iconPath": "",
-              "selectedIconPath": ""
+              "iconPath": "./images1/我的.png",
+              "selectedIconPath": "./images1/我的 (1).png"
           }
       ]
   }
