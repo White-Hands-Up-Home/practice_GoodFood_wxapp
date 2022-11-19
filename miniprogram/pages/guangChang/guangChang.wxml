@@ -3,7 +3,7 @@
 
 <scroll-view class="evaluation" scroll-y>
 <view class="stores" wx:for="{{stores}}" wx:key="id"> 
-  {{name}}  {{price}}
+  {{item.name}}  {{item.price}}
 </view>
 </scroll-view>
 

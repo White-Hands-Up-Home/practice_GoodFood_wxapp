@@ -1,31 +1,13 @@
 /* pages/guangChang/gunagChang.wxss */
-.search{
-    background-color: burlywood;
-    height: 200rpx;
-}
-
 .check{
-    background-color: cornflowerblue;
+    background-color: #ffc8b4;
     height: 50rpx;
     text-align: right;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .evaluation{
-    background-color: darkcyan;
-    border: 1px solid red;
+    background-color: #ffc8b4;
     width: auto;
     height: 100%;
-}
-
-input{
-    border: 1rpx solid rgb(231, 171, 40);
-    background-color: white;
-    margin: 50rpx;
-    padding: 5rpx;
-    border-radius: 10rpx;
-}
-
-.aaa{
-    height: 150rpx;
 }

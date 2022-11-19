@@ -10,38 +10,38 @@
   "window": {
     "enablePullDownRefresh": true,
     "onReachBottomDistance": 50,
-    "backgroundColor": "#efefef",
+    "backgroundColor": "#ffc8b4",
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarBackgroundColor": "#ffc8b4",
     "navigationBarTitleText": "珈有好食",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
 
   "tabBar": {
-      "backgroundColor": "#2b4b6b",
-      "borderStyle": "white",
-      "color": "",
-      "selectedColor": "",
+      "backgroundColor": "#996600",
+      "borderStyle": "black",
+      "color": "#000000",
+      "selectedColor": "#ffffff",
       "list": [
           {
               "pagePath": "pages/guangChang/guangChang",
               "text": "广场",
-              "iconPath": "",
-              "selectedIconPath": ""
+              "iconPath": "./images1/评论.png",
+              "selectedIconPath": "./images1/评论 (1).png"
           },
           {
               "pagePath": "pages/faBu/faBu",
               "text": "发布",
-              "iconPath": "",
-              "selectedIconPath": ""
+              "iconPath": "./images1/编辑.png",
+              "selectedIconPath": "./images1/编辑 (1).png"
           },
           {
               "pagePath": "pages/shop/shop",
               "text": "店铺",
-              "iconPath": "./images1/我的 (1).png",
-              "selectedIconPath": "./images1/我的.png"
+              "iconPath": "./images1/首页.png",
+              "selectedIconPath": "./images1/首页 (1).png"
           },
           {
               "pagePath": "pages/woDe/woDe",
