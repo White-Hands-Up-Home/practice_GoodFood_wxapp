@@ -1,16 +1,15 @@
 {
   "pages": [
-    "pages/guangChang/guangChang",
-    "pages/faBu/faBu",
-    "pages/shop/shop",
-    "pages/woDe/woDe"
-
-    
+    "pages/square/square",
+    "pages/publish/publish",
+    "pages/shops/shops",
+    "pages/mine/mine",
+    "pages/square-detail/square-detail"
   ],
   "window": {
     "enablePullDownRefresh": true,
     "onReachBottomDistance": 50,
-    "backgroundColor": "#ffc8b4",
+    "backgroundColor": "#ffffff",
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ffc8b4",
     "navigationBarTitleText": "珈有好食",
@@ -26,25 +25,25 @@
       "selectedColor": "#ffffff",
       "list": [
           {
-              "pagePath": "pages/guangChang/guangChang",
+              "pagePath": "pages/square/square",
               "text": "广场",
               "iconPath": "./images1/评论.png",
               "selectedIconPath": "./images1/评论 (1).png"
           },
           {
-              "pagePath": "pages/faBu/faBu",
+              "pagePath": "pages/publish/publish",
               "text": "发布",
               "iconPath": "./images1/编辑.png",
               "selectedIconPath": "./images1/编辑 (1).png"
           },
           {
-              "pagePath": "pages/shop/shop",
+              "pagePath": "pages/shops/shops",
               "text": "店铺",
               "iconPath": "./images1/首页.png",
               "selectedIconPath": "./images1/首页 (1).png"
           },
           {
-              "pagePath": "pages/woDe/woDe",
+              "pagePath": "pages/mine/mine",
               "text": "我的",
               "iconPath": "./images1/我的.png",
               "selectedIconPath": "./images1/我的 (1).png"

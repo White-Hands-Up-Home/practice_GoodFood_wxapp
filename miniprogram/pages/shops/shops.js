@@ -1,4 +1,4 @@
-// pages/faBu/faBu.js
+// pages/shops/shops.js
 Page({
 
     /**

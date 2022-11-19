@@ -1,21 +1,11 @@
-// pages/guangChang/gunagChang.js
+// pages/mine/mine.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        stores:[
-            {id: 1,name: 'KFC',price: 50},
-            {id: 2,name: 'KFC',price: 50},
-            {id: 3,name: 'KFC',price: 50}
-        ]
-    },
 
-    inputHandler(e){
-        this.setData({
-            msg:e.detail.value
-        })
     },
 
     /**

@@ -1,7 +1,7 @@
-/* pages/guangChang/gunagChang.wxss */
+/* pages/square/square.wxss */
 .check{
     background-color: #ffc8b4;
-    height: 50rpx;
+    height: 4%;
     text-align: right;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -9,5 +9,13 @@
 .evaluation{
     background-color: #ffc8b4;
     width: auto;
-    height: 100%;
+    height: 96%;
+}
+
+.list{
+    background-color: rgb(255, 255, 255);
+    margin: 10rpx;
+    padding: 10rpx;
+    height: 170rpx;
+    border-radius: 10rpx;
 }

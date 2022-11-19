@@ -1,4 +1,4 @@
-// pages/woDe/woDe.js
+// pages/publish/publish.js
 Page({
 
     /**

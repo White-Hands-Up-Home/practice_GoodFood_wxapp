@@ -1,4 +1,4 @@
-// pages/dianPu/dianPu.js
+// pages/square-detail/square-detail.js
 Page({
 
     /**
