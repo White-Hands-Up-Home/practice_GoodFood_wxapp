@@ -1,1 +1,96 @@
 /* pages/shops/shops.wxss */
+
+page{
+    position: relative;
+}
+.selector-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: sticky;
+    top:0rpx;
+    z-index: 1;
+    font-size: 35rpx;
+    color: #463124;
+    background-color:#FFE3CD;
+    height: 88rpx;
+    line-height: 88rpx;
+}
+.selector-container radio-group{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.selector-container .selector{
+    height: 88rpx;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    line-height: 88rpx;
+    margin-right: 66rpx;
+}
+.selector-container text{
+    word-break: keep-all;
+}
+#rank-by-scores{
+    margin-left: 80rpx;
+}
+.shop:nth-child(1){
+    margin-top: 0;
+}
+.shop{
+    height: 214rpx;
+    background-color: #FFF7F0;
+    margin-top: 11rpx;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 35rpx;
+    color: #463124;
+}
+.shops{
+    height: 100%;
+    background-color: #FFE3CD;
+}
+.shops .shop .shop-info{
+    margin-left: -135rpx;
+}
+.shops .shop .shop-info-detail{
+    white-space: nowrap;
+    word-break: keep-all;
+}
+.shops .shop .image-container{
+    width: 97rpx;
+    height: 97rpx;
+    margin-right: 72rpx;
+}
+.shops .shop .image-container image{
+    width: 97rpx;
+    height: 97rpx;
+}
+.shops .shop .shop-image-container{
+    width: 140rpx;
+    height: 140rpx;
+    margin-left: 49rpx;
+}
+.shops .shop .shop-image-container image{
+    width: 140rpx;
+    height: 140rpx;
+}
+.shops .shop .comment-count{
+    color: #707070;
+}
+.selector-container checkbox .wx-checkbox-input{
+    border-radius: 50%;/* 圆角 */
+    width: 32rpx; /* 背景的宽 */
+    height: 32rpx; /* 背景的高 */
+}
+.selector-container radio .wx-radio-input{
+    border-radius: 50%;/* 圆角 */
+    width: 32rpx; /* 背景的宽 */
+    height: 32rpx; /* 背景的高 */
+}
+.selector-container radio .wx-radio-input-checked{
+    border-radius: 50%;
+    background-color: red;
+}

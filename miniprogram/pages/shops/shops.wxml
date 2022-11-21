@@ -1,2 +1,29 @@
-<!--pages/shops/shops.wxml-->
-<text>pages/shops/shops.wxml</text>
+<view class="selector-container">
+    <radio-group>
+    <label class="selector">
+        <text id="rank-by-scores">按评分</text>
+        <radio></radio>
+    </label>
+    <label class="selector">
+        <text>按评价数量</text>
+        <radio></radio>
+    </label>
+    </radio-group>
+    <label class="selector">
+    <text>吃乎认证</text>
+    <checkbox></checkbox>
+    </label>
+</view>
+<scroll-view class="shops" scroll-y>
+    <view class="shop" wx:for="{{info}}" wx:key="index" bindtap="jumpToShopsDetail">
+        <view class="shop-image-container"><image src="./shop-images/shop-image.png"></image></view>
+        <view class="shop-info">
+            <view class="shop-info-detail">{{item.shop_name}}</view>
+            <view class="shop-info-detail">{{item.shop_score}}</view>
+            <view class="shop-info-detail comment-count">{{item.comment_count}}条评论</view>
+        </view>
+        <view class="image-container">
+            <image src="./shop-images/吃乎认证.png" wx:if="{{item.shop_isChiHu}}"></image>
+        </view>
+    </view>
+</scroll-view>
