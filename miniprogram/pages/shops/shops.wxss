@@ -76,6 +76,7 @@ page{
 .shops .shop .shop-image-container image{
     width: 140rpx;
     height: 140rpx;
+    border-radius: 17.5rpx;
 }
 .shops .shop .comment-count{
     color: #707070;

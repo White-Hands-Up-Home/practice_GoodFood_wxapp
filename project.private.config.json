@@ -1,6 +1,7 @@
 {
     "setting": {
-        "compileHotReLoad": false
+        "compileHotReLoad": false,
+        "urlCheck": false
     },
     "condition": {
         "miniprogram": {
@@ -50,6 +51,20 @@
                     "name": "pages/updateRecordSuccess/index",
                     "pathName": "pages/updateRecordSuccess/index",
                     "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "店铺",
+                    "pathName": "pages/shops/shops",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "店铺详情页",
+                    "pathName": "pages/shops-detail/shops-detail",
+                    "query": "",
+                    "launchMode": "default",
                     "scene": null
                 }
             ]

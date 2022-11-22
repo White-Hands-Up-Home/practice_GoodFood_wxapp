@@ -1,2 +1,37 @@
-<!--pages/shops-detail/shops-detail.wxml-->
-<text>pages/shops-detail/shops-detail.wxml</text>
+<view id="body">
+    <view class="header">
+        <view class="shop-info">
+            <view class="shop-info-pic-container shop-info-items">
+                <image src="./image/shop-pic.png"></image>
+            </view>
+
+            <view class="shop-info-items details">
+                <view class="info-item">{{shop_name}}</view>
+                <view class="info-item">{{shop_score}}</view>
+                <view class="info-item">{{shop_comment_count}}条评价</view>
+            </view>
+        </view>
+        <view class="buttons">
+            <button>收藏店铺</button>
+            <button>我要评价</button>
+        </view>
+    </view>
+    <scroll-view scroll-y>
+        <view class="selector-container">
+            <radio-group>
+                <label class="selector">
+                    <text id="rank-by-scores">按评价时间</text>
+                    <radio></radio>
+                </label>
+                <label class="selector">
+                    <text>按点赞数</text>
+                    <radio></radio>
+                </label>
+            </radio-group>
+            <label class="selector">
+                <text>吃乎认证</text>
+                <checkbox></checkbox>
+            </label>
+        </view>
+    </scroll-view>
+</view>

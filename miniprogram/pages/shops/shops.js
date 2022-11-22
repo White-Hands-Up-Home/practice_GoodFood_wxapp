@@ -93,7 +93,14 @@ Page({
 
     },
     //跳转到详情页
-    jumpToShopsDetail(){
+    jumpToShopsDetail(e){
+        console.log(e.currentTarget.dataset);
+        let name = e.currentTarget.dataset.name;
+        let score = e.currentTarget.dataset.score;
+        let comment = e.currentTarget.dataset.comment;
+        wx.setStorageSync('shop_name', name);
+        wx.setStorageSync('shop_score', score);
+        wx.setStorageSync('shop_comment', comment);
         wx.navigateTo({
           url: '/pages/shops-detail/shops-detail',
           success: (result) => {},

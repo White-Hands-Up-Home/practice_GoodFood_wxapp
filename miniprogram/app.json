@@ -3,23 +3,24 @@
     "pages/square/square",
     "pages/publish/publish",
     "pages/shops/shops",
+    "pages/shops-detail/shops-detail",
     "pages/mine/mine",
     "pages/square-detail/square-detail"
   ],
   "window": {
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "onReachBottomDistance": 50,
     "backgroundColor": "#ffffff",
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#ffc8b4",
-    "navigationBarTitleText": "珈有好食",
+    "navigationBarBackgroundColor": "#FFE3CD",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",
 
   "tabBar": {
-      "backgroundColor": "#996600",
+      "backgroundColor": "#463124",
       "borderStyle": "black",
       "color": "#000000",
       "selectedColor": "#ffffff",
