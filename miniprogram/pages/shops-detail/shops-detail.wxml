@@ -2,12 +2,12 @@
     <view class="header">
         <view class="shop-info">
             <view class="shop-info-pic-container shop-info-items">
-                <image src="./image/shop-pic.png"></image>
+                <image src="../../images1/image/shop-pic.png"></image>
             </view>
 
             <view class="shop-info-items details">
                 <view class="info-item">{{shop_name}}</view>
-                <view class="info-item">{{shop_score}}</view>
+                <view class="info-item">评分:{{shop_score}}</view>
                 <view class="info-item">{{shop_comment_count}}条评价</view>
             </view>
         </view>
@@ -16,22 +16,55 @@
             <button>我要评价</button>
         </view>
     </view>
-    <scroll-view scroll-y>
-        <view class="selector-container">
-            <radio-group>
-                <label class="selector">
-                    <text id="rank-by-scores">按评价时间</text>
-                    <radio></radio>
-                </label>
-                <label class="selector">
-                    <text>按点赞数</text>
-                    <radio></radio>
-                </label>
-            </radio-group>
+    <view class="selector-container">
+        <radio-group>
             <label class="selector">
-                <text>吃乎认证</text>
-                <checkbox></checkbox>
+                <text id="rank-by-scores">按评价时间</text>
+                <radio></radio>
             </label>
+            <label class="selector">
+                <text>按点赞数</text>
+                <radio></radio>
+            </label>
+        </radio-group>
+        <label class="selector">
+            <text>吃乎认证</text>
+            <checkbox></checkbox>
+        </label>
+    </view>
+    <view class="comment-card" wx:for="{{info}}" wx:key="index">
+        <view class="card-part shop-self">
+            <view class="shop-name">
+                <image src="../../images1/image/coordinates_fill.svg"></image>
+                <text>{{shop_name}}</text>
+                <view>评分{{item.shop.shop_score}}</view>
+            </view>
+            <view class="shop-pic">
+                <!-- 链接待添加 {{item.user.image_url[0]}}-->
+                <image src="../../images1/image/food.png" wx:if="{{item.user.image_url[0]!=null}}"></image>
+                <image src="../../images1/image/food.png" wx:if="{{item.user.image_url[1]!=null}}"></image>
+            </view>
         </view>
-    </scroll-view>
+        <view class="card-part user-comment">
+            <view class="user-info">
+                <!-- {{item.user.user_profile_photo_url}} -->
+                <image src="../../images1/image/user-img.png"></image>
+                <text>{{item.user.user_name}}</text>
+            </view>
+            <view class="commet-content">
+                {{item.user.comment.comment_content}}
+                这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论
+            </view>
+        </view>
+        <view class="card-part comment-infos">
+            <view class="comment-info">
+                <image src="../../images1/image/like.svg" bindtap="changeLike" data-count="{{item.user.comment.comment_like_count}}"></image>
+                <text>{{item.user.comment.comment_like_count}}</text>
+            </view>
+            <view class="comment-info">
+                <image src="../../images1/image/message.svg"></image>
+                <text>{{item.user.comment.comment_review_count}}</text>
+            </view>
+        </view>
+    </view>
 </view>
