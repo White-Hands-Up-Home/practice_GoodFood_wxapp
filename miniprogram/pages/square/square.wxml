@@ -1,10 +1,27 @@
 <!--pages/square/square.wxml-->
-<view class="check">吃乎评价</view>
+<label class="check">
+    <text>吃乎评价 </text>
+    <checkbox class="checkrideo"></checkbox>
+</label>
 
-<scroll-view class="evaluation" scroll-y>
+<scroll-view class="box" scroll-y>
 <view class="stores" wx:for="{{stores}}" wx:key="index"> 
-  <view class="list" bindtap="goToDetail">
-    {{item.name}}  {{item.price}}
+  <view class="list">
+    <image class="location" src="../../images/xrxmui(1)/svg/coordinates_fill.svg"></image>
+    <text class="storeName" bindtap="goToDetail">店铺名称</text>
+
+    <scroll-view class="photos" scroll-x="true">
+       <view class="photo-list">
+          <view class="fra"><image mode="widthFix" class="test1"></image></view>
+          <view class="fra"><image mode="widthFix" class="test2"></image></view>
+          <view class="fra"><image mode="widthFix" class="test3"></image></view>
+       </view>
+        
+    </scroll-view>
+
+    <view>这是头像和名字</view>
+    <view>这是评论</view>
+    <view>这是点赞</view>
   </view>
 </view>
 </scroll-view>

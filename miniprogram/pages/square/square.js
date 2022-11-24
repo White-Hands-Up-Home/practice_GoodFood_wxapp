@@ -52,7 +52,6 @@ Page({
       complete: (res) => {},
     })
     },
-
     // 跳转页面
     goToDetail(){
         wx.navigateTo({
@@ -64,7 +63,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-        this.getData()
+        
     },
 
     /**

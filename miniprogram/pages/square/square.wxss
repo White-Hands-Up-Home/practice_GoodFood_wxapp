@@ -6,16 +6,85 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.evaluation{
+.box{
     background-color: #ffc8b4;
     width: auto;
     height: 96%;
 }
 
 .list{
-    background-color: rgb(255, 255, 255);
-    margin: 10rpx;
-    padding: 10rpx;
-    height: 170rpx;
-    border-radius: 10rpx;
+    background-color: rgb(255, 244, 213);
+    margin: 25rpx;
+    padding: 20rpx;
+    height: 650rpx;
+    border-radius: 30rpx;
+    box-shadow: 5rpx 10rpx 5rpx #aaa9a9e1;
+}
+
+/* 选框样式-圆型 */
+.checkrideo .wx-checkbox-input {
+    border-radius: 50%;
+    width: 35rpx;
+    height: 35rpx;
+  }
+  /* 让对勾居中 */
+  .checkrideo .wx-checkbox-input.wx-checkbox-input-checked:before {
+    font: normal normal normal 14px/1 "weui";
+    content: "\EA08";
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%) scale(0.73);
+    -webkit-transform: translate(-50%, -48%) scale(0.73);
+  }
+  /* 对勾的大小以及颜色 */
+  .checkrideo .wx-checkbox-input.wx-checkbox-input-checked::before{
+    color:rgb(0, 0, 0);
+  }
+
+  .location{
+      height: 80rpx;
+      width: 80rpx;
+  }
+
+  .storeName{
+      color: rgb(32, 25, 19);
+      font-size: x-large;
+      font-weight: 800;
+      position: relative;
+      top: -25rpx;
+  }
+
+  /* swiper{
+      height: 300rpx;
+      width: 100%;
+  } */
+
+  .photo-list{
+      width: 100%;
+      height: 300rpx;
+      display: flex;
+      text-align: center;
+  }
+
+  .fra{
+      padding: 20rpx;
+      width: 400rpx;
+  }
+
+  .test1{
+      background-color: aqua;
+      width: 370rpx;
+      height: 300rpx;
+  }
+  .test2{
+    background-color: rgb(19, 155, 26);
+    width: 370rpx;
+    height: 300rpx;
+}
+  .test3{
+    background-color: rgb(77, 29, 122);
+    width: 370rpx;
+    height: 300rpx;
 }

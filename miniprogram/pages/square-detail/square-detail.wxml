@@ -1,2 +1,21 @@
 <!--pages/square-detail/square-detail.wxml-->
-<text>pages/square-detail/square-detail.wxml</text>
+<view class="header" style='margin:10rpx auto;text-align:center'>
+  <open-data class="open-data-userAvatarUrl" type="userAvatarUrl"></open-data>
+  <view class="Name" style='margin:40rpx auto;text-align:center;display:flex;justify-content: center;'>
+    <open-data class="open-data-userNickName line1" type="userNickName" lang="zh_CN"></open-data>
+  </view>    
+</view>
+ 
+
+ 
+
+<view>图标</view>
+<swiper>轮播图</swiper>
+<view>日期</view>
+<view>评论数</view>
+
+<scroll-view class="box" scroll-y>
+  <view class="list">aaa</view>
+</scroll-view>
+
+<view>底部</view>
