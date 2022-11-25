@@ -1,246 +1,245 @@
 #body {
-    width: 100%;
-    background-color: #FFE3CD;
+  width: 100%;
+  background-color: #ffe3cd;
 }
 
 image {
-    width: 100rpx;
-    height: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
 }
 
 .header {
-    margin: 0;
-    padding: 0;
-    height: 440rpx;
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-top: 1px solid #000000;
-    border-bottom: 6rpx solid #707070;
+  margin: 0;
+  padding: 0;
+  height: 440rpx;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-top: 1px solid #000000;
+  border-bottom: 6rpx solid #707070;
 }
 
 .header .shop-info {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 212rpx;
-    margin-top: 55.5rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 212rpx;
+  margin-top: 55.5rpx;
 }
 
 .header .shop-info .shop-info-pic-container {
-    width: 212rpx;
-    height: 212rpx;
-    /* margin-right: 300rpx; */
-    margin-left: 104rpx;
-    margin-right: 44rpx;
+  width: 212rpx;
+  height: 212rpx;
+  /* margin-right: 300rpx; */
+  margin-left: 104rpx;
+  margin-right: 44rpx;
 }
 
 .header .shop-info .shop-info-pic-container image {
-    width: 212rpx;
-    height: 212rpx;
-    border-radius: 35rpx;
+  width: 212rpx;
+  height: 212rpx;
+  border-radius: 35rpx;
 }
 
 .header .shop-info .shop-info-items {
-    line-height: 60rpx;
-    /* margin: 100rpx; */
-    /* margin-left: 50rpx; */
+  line-height: 60rpx;
+  /* margin: 100rpx; */
+  /* margin-left: 50rpx; */
 }
 
 /* .header .shop-info .details{
     margin-left: -15rpx;
 } */
 .header .shop-info .shop-info-items .info-item:nth-child(1) {
-    font-size: 35rpx;
-    font-weight: 1000;
-    color: #463124;
-    word-break: keep-all;
+  font-size: 35rpx;
+  font-weight: 1000;
+  color: #463124;
+  word-break: keep-all;
 }
 
 .header .shop-info .shop-info-items .info-item:nth-child(3) {
-    font-weight: 400rpx;
-    color: #463124;
-    font-size: 35rpx;
+  font-weight: 400rpx;
+  color: #463124;
+  font-size: 35rpx;
 }
 
 .header .buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
 }
 
 .header .buttons button {
-    background-color: #74665D;
-    width: 268rpx;
-    height: 88rpx;
-    border-radius: 82.5rpx;
-    font-size: 35rpx;
-    color: #FFE3CD;
+  background-color: #74665d;
+  width: 268rpx;
+  height: 88rpx;
+  border-radius: 82.5rpx;
+  font-size: 35rpx;
+  color: #ffe3cd;
 }
 
 .header .buttons button:nth-child(1) {
-    margin-left: 80rpx;
+  margin-left: 80rpx;
 }
 
 .header .buttons button:nth-child(2) {
-    margin-right: 80rpx;
+  margin-right: 80rpx;
 }
 
 .header .buttons button:active {
-    background-color: rgb(37, 33, 33);
+  background-color: rgb(37, 33, 33);
 }
 
 .selector-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    position: sticky;
-    top: 0rpx;
-    z-index: 1;
-    font-size: 35rpx;
-    color: #463124;
-    background-color: #FFE3CD;
-    height: 88rpx;
-    line-height: 88rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0rpx;
+  z-index: 1;
+  font-size: 35rpx;
+  color: #463124;
+  background-color: #ffe3cd;
+  height: 88rpx;
+  line-height: 88rpx;
 }
 
 .selector-container radio-group {
-    display: flex;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .selector-container .selector {
-    height: 88rpx;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    line-height: 88rpx;
-    margin-right: 66rpx;
+  height: 88rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  line-height: 88rpx;
+  margin-right: 66rpx;
 }
 
 .selector-container text {
-    word-break: keep-all;
+  word-break: keep-all;
 }
 
 #rank-by-scores {
-    margin-left: 80rpx;
+  margin-left: 80rpx;
 }
 
 .selector-container checkbox .wx-checkbox-input {
-    border-radius: 50%;
-    /* 圆角 */
-    width: 32rpx;
-    /* 背景的宽 */
-    height: 32rpx;
-    /* 背景的高 */
+  border-radius: 50%;
+  /* 圆角 */
+  width: 32rpx;
+  /* 背景的宽 */
+  height: 32rpx;
+  /* 背景的高 */
 }
 
 .selector-container radio .wx-radio-input {
-    border-radius: 50%;
-    /* 圆角 */
-    width: 32rpx;
-    /* 背景的宽 */
-    height: 32rpx;
-    /* 背景的高 */
+  border-radius: 50%;
+  /* 圆角 */
+  width: 32rpx;
+  /* 背景的宽 */
+  height: 32rpx;
+  /* 背景的高 */
 }
 
 .selector-container radio .wx-radio-input-checked {
-    border-radius: 50%;
-    background-color: red;
+  border-radius: 50%;
+  background-color: red;
 }
 
 .comment-card {
-    width: 704.5rpx;
-    margin: 0 auto;
-    border-radius: 35rpx;
-    margin-bottom: 25rpx;
-    box-shadow: 0px 10px 10px 1px rgba(81, 81, 81, 0.16);
-    background-color: #FFF1E6;
+  width: 704.5rpx;
+  margin: 0 auto;
+  border-radius: 35rpx;
+  margin-bottom: 25rpx;
+  box-shadow: 0px 10px 10px 1px rgba(81, 81, 81, 0.16);
+  background-color: #fff1e6;
 }
-.comment-card .shop-self .shop-name{
-    display:flex;
-    justify-content: flex-start;
-    height: 83rpx;
-    font-size: 35rpx;
-    line-height: 83rpx;
+.comment-card .shop-self .shop-name {
+  display: flex;
+  justify-content: flex-start;
+  height: 83rpx;
+  font-size: 35rpx;
+  line-height: 83rpx;
 }
-.comment-card .shop-self{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border-bottom: 2px solid #707070;
+.comment-card .shop-self {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-bottom: 2px solid #707070;
 }
-.comment-card .shop-self .shop-name text{
-    margin-right: 10rpx;
+.comment-card .shop-self .shop-name text {
+  margin-right: 10rpx;
 }
-.comment-card .shop-self .shop-name image{
-    width: 70rpx;
-    height: 70rpx;
-    margin-left: 50rpx;
-    margin-right: 5rpx;
-    margin-top: 10rpx;
+.comment-card .shop-self .shop-name image {
+  width: 70rpx;
+  height: 70rpx;
+  margin-left: 50rpx;
+  margin-right: 5rpx;
+  margin-top: 10rpx;
 }
-.comment-card .shop-self .shop-pic{
-    display: flex;
-    overflow: hidden;
-    justify-content: flex-start;
-    flex-shrink: 0;
+.comment-card .shop-self .shop-pic {
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-shrink: 0;
 }
-.comment-card .shop-self .shop-pic image{
-    width: 359rpx;
-    /* object-fit: fill; */
-    height: 203rpx;
-    flex-shrink: 0;
-    border-radius: 31.5rpx;
-    margin-left: 24.5rpx;
-    margin-bottom: 20rpx;
+.comment-card .shop-self .shop-pic image {
+  width: 359rpx;
+  /* object-fit: fill; */
+  height: 203rpx;
+  flex-shrink: 0;
+  border-radius: 31.5rpx;
+  margin-left: 24.5rpx;
+  margin-bottom: 20rpx;
 }
-.comment-card .user-comment{
-    /* display: flex; */
-    /* justify-content: flex-start;
+.comment-card .user-comment {
+  /* display: flex; */
+  /* justify-content: flex-start;
     align-content: flex-start; */
-    border-bottom: 2px solid #707070;
-    
+  border-bottom: 2px solid #707070;
 }
-.comment-card .user-comment .user-info{
-    height: 98rpx;
-    /* background-color: red; */
-    color: #707070;
-    font-size: 29.75rpx;
-    display: flex;
+.comment-card .user-comment .user-info {
+  height: 98rpx;
+  /* background-color: red; */
+  color: #707070;
+  font-size: 29.75rpx;
+  display: flex;
 }
-.comment-card .user-comment .user-info text{
-    height: 98rpx;
-    line-height: 98rpx;
-    display: block;
+.comment-card .user-comment .user-info text {
+  height: 98rpx;
+  line-height: 98rpx;
+  display: block;
 }
-.comment-card .user-comment .user-info image{
-    border-radius: 50%;
-    width: 59.5rpx;
-    height: 59.5rpx;
-    margin-left: 54.25rpx;
-    margin-top: 19.25rpx;
-    margin-right: 15rpx;
+.comment-card .user-comment .user-info image {
+  border-radius: 50%;
+  width: 59.5rpx;
+  height: 59.5rpx;
+  margin-left: 54.25rpx;
+  margin-top: 19.25rpx;
+  margin-right: 15rpx;
 }
-.comment-card .user-comment .commet-content{
-    margin-left: 33.25rpx;
-    margin-right: 33.25rpx;
-    margin-bottom: 43.75rpx;
+.comment-card .user-comment .commet-content {
+  margin-left: 33.25rpx;
+  margin-right: 33.25rpx;
+  margin-bottom: 43.75rpx;
 }
-.comment-card .comment-infos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 87.5rpx;
+.comment-card .comment-infos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 87.5rpx;
 }
-.comment-card .comment-infos .comment-info{
-    display: flex;
-    align-items: center;
-    font-size: 28rpx;
-    color: #707070;
+.comment-card .comment-infos .comment-info {
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #707070;
 }
-.comment-card .comment-infos .comment-info image{
-    width: 60rpx;
-    height: 60rpx;
+.comment-card .comment-infos .comment-info image {
+  width: 60rpx;
+  height: 60rpx;
 }

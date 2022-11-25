@@ -1,2 +1,58 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view id="body">
+    <view class="header">
+        <image class="bac" src="../../images1/image/bac.png"></image>
+        <view class="user-info">
+            <view class="head-pic">
+                <image src="../../images1/image/user-img.png"></image>
+                <image class="v-prove" src="../../images1/image/v认证.png" wx:if="{{if_ChiHu}}"></image>
+            </view>
+            <view class="infos">
+                <text>{{info.user_name}}</text>
+                <text>学号：{{school_num}}</text>
+            </view>
+        </view>
+        <view class="buttons">
+            <button style="width: 210rpx;">我的收藏</button>
+            <button style="width: 210rpx;">作者认证</button>
+            <button style="width: 210rpx;">使用指南</button>
+        </view>
+
+    </view>
+    <view class="comments">
+        <view class="comment-card" wx:for="{{info.comment}}" wx:key="index">
+            <view class="card-part shop-self">
+                <view class="shop-name">
+                    <image src="../../images1/image/coordinates_fill.svg"></image>
+                    <text>{{item.shop_name}}</text>
+                    <view>评分{{item.score}}</view>
+                </view>
+                <view class="shop-pic">
+                    <!-- 链接待添加 {{item.image_1}}-->
+                    <image src="../../images1/image/food.png" wx:if="{{item.image_1!=null}}"></image>
+                    <image src="../../images1/image/food.png" wx:if="{{item.image_2!=null}}"></image>
+                </view>
+            </view>
+            <view class="card-part user-comment">
+                <view class="user-info">
+                    <!-- {{item.user.user_profile_photo_url}} -->
+                    <image src="../../images1/image/user-img.png"></image>
+                    <text>{{info.user_name}}</text>
+                </view>
+                <view class="commet-content">
+                    {{item.content}}
+                    这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论
+                </view>
+            </view>
+            <view class="card-part comment-infos">
+                <view class="comment-info">
+                    <image src="../../images1/image/like.svg" bindtap="changeLike" data-count="{{item.like_num}}"></image>
+                    <text>{{item.like_num}}</text>
+                </view>
+                <view class="comment-info">
+                    <image src="../../images1/image/message.svg"></image>
+                    <text>{{item.huitie_num}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

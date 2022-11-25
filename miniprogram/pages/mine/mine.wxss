@@ -1,1 +1,170 @@
-/* pages/mine/mine.wxss */
+#body{
+    background-color: #FFE3CC;
+}
+.bac{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.header{
+    height: 376.25rpx;
+    background-color: #FFE3CC;
+    z-index: 1;
+    position: relative;
+}
+.user-info{
+    display: flex;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    height: 264.25rpx;
+    justify-content: center;
+}
+.infos text{
+    color: white;
+}
+.infos text:nth-child(1){
+    font-size: 52.5rpx;
+}
+.infos text:nth-child(2){
+    font-size: 35rpx;
+}
+.head-pic{
+    margin: 43.75rpx 0;
+    margin-bottom: 28rpx;
+    margin-left: 87.5rpx;
+    margin-right: 50.75rpx;
+    position: relative;
+}
+.header .user-info .v-prove{
+    position: absolute;
+    width: 90rpx;
+    height: 90rpx;
+    z-index: 3;
+    bottom: -10rpx;
+    right: -10rpx;
+    object-fit: cover;
+}
+.head-pic image{
+    border-radius: 50%;
+    width: 192.5rpx;
+    height: 192.5rpx;
+}
+.buttons{
+    display: flex;
+    word-wrap: none;
+    word-break: keep-all;
+    margin-bottom: 21.25rpx;
+}
+.buttons button{
+    width: 100rpx;
+    background-color: rgba(70, 49, 36, 0.47);
+    color: white;
+    height: 87.5rpx;
+    border-radius: 50rpx;
+    padding-top: 20rpx;
+}
+.buttons button:active{
+    background-color: rgb(63, 62, 62);
+}
+.comments{
+    margin-top: 20rpx;
+}
+
+/* 评论卡 */
+.comment-card {
+    width: 704.5rpx;
+    margin: 0 auto;
+    border-radius: 35rpx;
+    margin-bottom: 25rpx;
+    box-shadow: 0px 10px 10px 1px rgba(81, 81, 81, 0.16);
+    background-color: #fff1e6;
+  }
+  .comment-card .shop-self .shop-name {
+    display: flex;
+    justify-content: flex-start;
+    height: 83rpx;
+    font-size: 35rpx;
+    line-height: 83rpx;
+  }
+  .comment-card .shop-self {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 2px solid #707070;
+  }
+  .comment-card .shop-self .shop-name text {
+    margin-right: 10rpx;
+  }
+  .comment-card .shop-self .shop-name image {
+    width: 70rpx;
+    height: 70rpx;
+    margin-left: 50rpx;
+    margin-right: 5rpx;
+    margin-top: 10rpx;
+  }
+  .comment-card .shop-self .shop-pic {
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
+    flex-shrink: 0;
+  }
+  .comment-card .shop-self .shop-pic image {
+    width: 359rpx;
+    /* object-fit: fill; */
+    height: 203rpx;
+    flex-shrink: 0;
+    border-radius: 31.5rpx;
+    margin-left: 24.5rpx;
+    margin-bottom: 20rpx;
+  }
+  .comment-card .user-comment {
+    /* display: flex; */
+    /* justify-content: flex-start;
+      align-content: flex-start; */
+    border-bottom: 2px solid #707070;
+  }
+  .comment-card .user-comment .user-info {
+    height: 98rpx;
+    /* background-color: red; */
+    color: #707070;
+    font-size: 29.75rpx;
+    display: flex;
+  }
+  .comment-card .user-comment .user-info text {
+    height: 98rpx;
+    line-height: 98rpx;
+    display: block;
+  }
+  .comment-card .user-comment .user-info image {
+    border-radius: 50%;
+    width: 59.5rpx;
+    height: 59.5rpx;
+    margin-left: 54.25rpx;
+    margin-top: 19.25rpx;
+    margin-right: 15rpx;
+  }
+  .comment-card .user-comment .commet-content {
+    margin-left: 33.25rpx;
+    margin-right: 33.25rpx;
+    margin-bottom: 43.75rpx;
+  }
+  .comment-card .comment-infos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 87.5rpx;
+  }
+  .comment-card .comment-infos .comment-info {
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    color: #707070;
+  }
+  .comment-card .comment-infos .comment-info image {
+    width: 60rpx;
+    height: 60rpx;
+  }
+  

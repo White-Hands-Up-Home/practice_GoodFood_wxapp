@@ -5,7 +5,63 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        if_ChiHu:true,
+        school_num:20223000000,
+        info: {
+            image: "http://dummyimage.com/400x400",
+            user_name: "阿尼亚",
+            "comment": [{
+                    "user_name": "武娜",
+                    "shop_name": "斗但次老法",
+                    "score": 9,
+                    "image_1": "http://dummyimage.com/400x400",
+                    "content": "eu",
+                    "image_2": "http://dummyimage.com/400x400",
+                    "like_num": 81,
+                    "huitie_num": 84
+                },
+                {
+                    "user_name": "钱秀英",
+                    "shop_name": "指信器流么",
+                    "score": 7,
+                    "image_1": "http://dummyimage.com/400x400",
+                    "content": "consequat",
+                    "image_2": "http://dummyimage.com/400x400",
+                    "like_num": 68,
+                    "huitie_num": 12
+                },
+                {
+                    "user_name": "罗丽",
+                    "shop_name": "查住毛别治",
+                    "score": 31,
+                    "image_1": "http://dummyimage.com/400x400",
+                    "content": "cillum consectetur",
+                    "image_2": "http://dummyimage.com/400x400",
+                    "like_num": 88,
+                    "huitie_num": 28
+                },
+                {
+                    "user_name": "高娟",
+                    "shop_name": "养立只十确关身",
+                    "score": 59,
+                    "image_1": "http://dummyimage.com/400x400",
+                    "content": "dolore",
+                    "image_2": "http://dummyimage.com/400x400",
+                    "like_num": 10,
+                    "huitie_num": 3
+                },
+                {
+                    "user_name": "陆秀兰",
+                    "shop_name": "量心无民不验任",
+                    "score": 81,
+                    "image_1": "http://dummyimage.com/400x400",
+                    "content": "anim nisi aliqua eu",
+                    "image_2": "http://dummyimage.com/400x400",
+                    "like_num": 72,
+                    "huitie_num": 92
+                }
+            ]
+        },
     },
 
     /**
