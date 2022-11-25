@@ -3,6 +3,7 @@
     "pages/square/square",
     "pages/publish/publish",
     "pages/shops/shops",
+    "pages/shops-detail/shops-detail",
     "pages/mine/mine",
     "pages/square-detail/square-detail"
   ],
