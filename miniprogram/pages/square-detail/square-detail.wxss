@@ -1,1 +1,18 @@
-/* pages/square-detail/square-detail.wxss */
+.box{
+    background-color: #ffc8b4;
+    width: auto;
+    height: 40%;
+}
+
+  .open-data-userAvatarUrl {
+    width: 160rpx;
+    height: 160rpx;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 40rpx auto;
+  }
+  .open-data-userNickName{
+    max-width: 105rpx;
+    display:block;
+  }
