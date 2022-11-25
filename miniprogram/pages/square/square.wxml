@@ -9,19 +9,48 @@
   <view class="list">
     <image class="location" src="../../images/xrxmui(1)/svg/coordinates_fill.svg"></image>
     <text class="storeName" bindtap="goToDetail">店铺名称</text>
+    <image class="v-prove" src="../../images1/image/v认证.png" ></image>
+
+<!-- 星星组件 -->
+    <!-- <view class="mb-5">
+		<star bind:staring="staring"></star>
+	</view> -->
+
 
     <scroll-view class="photos" scroll-x="true">
        <view class="photo-list">
-          <view class="fra"><image mode="widthFix" class="test1"></image></view>
-          <view class="fra"><image mode="widthFix" class="test2"></image></view>
-          <view class="fra"><image mode="widthFix" class="test3"></image></view>
+          <!-- 链接待添加 {{item.image_1}}-->
+          <image src="../../images1/image/food.png"></image>
+          <image src="../../images1/image/food.png"></image>
+          <image src="../../images1/image/food.png"></image>
        </view>
-        
     </scroll-view>
 
-    <view>这是头像和名字</view>
-    <view>这是评论</view>
-    <view>这是点赞</view>
+    <!-- 头像及ID -->
+    <view class="user-info">
+        <!-- {{item.user.user_profile_photo_url}} -->
+        <image src="../../images1/image/user-img.png"></image>
+        <text>阿尼亚</text>
+    </view>
+
+    <!-- 评论内容 -->
+    <view class="comment-content">
+        这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论
+    </view>
+
+    <view class="comment-infos">
+                <!-- 喜欢，点赞 -->
+                <view class="comment-info">
+                    <image src="../../images1/image/like.svg" bindtap="changeLike" data-count="{{item.like_num}}"></image>
+                    <text>100</text>
+                </view>
+                <!-- 评论 -->
+                <view class="comment-info">
+                    <image src="../../images1/image/message.svg" bindtap="goToDetail"></image>
+                    <text>100</text>
+                </view>
+    </view>
+
   </view>
 </view>
 </scroll-view>

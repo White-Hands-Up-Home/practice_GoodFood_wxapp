@@ -12,7 +12,7 @@
     "onReachBottomDistance": 50,
     "backgroundColor": "#ffffff",
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#ffc8b4",
+    "navigationBarBackgroundColor": "#FFE3CC",
     "navigationBarTitleText": "珈有好食",
     "navigationBarTextStyle": "black"
   },
