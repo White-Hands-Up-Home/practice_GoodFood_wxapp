@@ -12,9 +12,9 @@
     <image class="v-prove" src="../../images1/image/v认证.png" ></image>
 
 <!-- 星星组件 -->
-    <!-- <view class="mb-5">
+    <view class="mb-5">
 		<star bind:staring="staring"></star>
-	</view> -->
+	</view>
 
 
     <scroll-view class="photos" scroll-x="true">

@@ -12,11 +12,11 @@ Component({
      */
     data: {
       list: [
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
+        '../../images/xrxmui(1)/svg/like.svg',
+        '../../images/xrxmui(1)/svg/like.svg',
+        '../../images/xrxmui(1)/svg/like.svg',
+        '../../images/xrxmui(1)/svg/like.svg',
+        '../../images/xrxmui(1)/svg/like.svg',
       ],
       number: 0
     },
@@ -28,14 +28,14 @@ Component({
       staring: function (e) {   
         let idx = e.target.dataset.index
         let list = [
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
+          '../../images/xrxmui(1)/svg/like.svg',
+          '../../images/xrxmui(1)/svg/like.svg',
+          '../../images/xrxmui(1)/svg/like.svg',
+          '../../images/xrxmui(1)/svg/like.svg',
+          '../../images/xrxmui(1)/svg/like.svg',
         ]
         for (let i = 0; i <= idx; i++) {
-          list[i] = '/miniprogram/images/xrxmui(1)/svg/like_fill.svg'
+          list[i] = '../../images/xrxmui(1)/svg/like.svg'
         }
         this.setData({
           list,

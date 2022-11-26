@@ -10,7 +10,7 @@ Page({
         info: {
             image: "http://dummyimage.com/400x400",
             user_name: "阿尼亚",
-            "comment": [{
+            comment: [{
                     "user_name": "武娜",
                     "shop_name": "斗但次老法",
                     "score": 9,
@@ -62,6 +62,22 @@ Page({
                 }
             ]
         },
+    },
+    goToCollection(){
+        wx.navigateTo({
+          url: '../collection/collection',
+          success: (result) => {},
+          fail: (res) => {},
+          complete: (res) => {},
+        })
+    },
+    goToHelp(){
+        wx.navigateTo({
+          url: '../help/help',
+          success: (result) => {},
+          fail: (res) => {},
+          complete: (res) => {},
+        })
     },
 
     /**

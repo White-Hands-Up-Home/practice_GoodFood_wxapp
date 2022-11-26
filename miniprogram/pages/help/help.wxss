@@ -1,0 +1,20 @@
+/* pages/help/help.wxss */
+image{
+    width: 100%;
+    height: 208.25rpx;
+    margin-bottom: 84rpx;
+    border-radius: 20rpx;
+}
+.body{
+    width: 595rpx;
+    height: 100%;
+    padding: 77rpx;
+    padding-left: 77rpx;
+    word-wrap: wrap;
+    word-break: normal;
+    color: #432F23;
+    font-size: 29.75rpx;
+}
+text{
+    width: 595rpx;
+}
