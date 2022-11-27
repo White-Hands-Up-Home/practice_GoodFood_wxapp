@@ -1,7 +1,18 @@
 {
+<<<<<<< HEAD
     "usingComponents": {}
 }
 
 
 
   
+=======
+
+    "usingComponents": {
+      "star": "/components/star/star"
+    },
+    "navigationBarTitleText": "发布评价",
+    "component": true
+  }
+
+>>>>>>> master

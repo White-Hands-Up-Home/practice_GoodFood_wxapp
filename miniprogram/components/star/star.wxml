@@ -1,6 +1,11 @@
 <view class="stars-box">
+<<<<<<< HEAD
   <block wx:for="{{list}}" wx:key="index">
     <image src="{{item}}" class="star" data-index="{{index}}" wx:for-index="{{index}}" bindtap="scoring"></image>
+=======
+  <block wx:if="{{list.length>0}}" wx:for="{{list}}" wx:key="index">
+    <image src="{{item}}" class="star" data-index="{{index}}" wx:for-index="{{index}}" bindtap="staring"></image>
+>>>>>>> master
   </block>
 </view>
 

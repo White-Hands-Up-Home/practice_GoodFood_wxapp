@@ -32,39 +32,5 @@
             <checkbox></checkbox>
         </label>
     </view>
-    <view class="comment-card" wx:for="{{info}}" wx:key="index">
-        <view class="card-part shop-self">
-            <view class="shop-name">
-                <image src="../../images1/image/coordinates_fill.svg"></image>
-                <text>{{shop_name}}</text>
-                <view>评分{{item.shop.shop_score}}</view>
-            </view>
-            <view class="shop-pic">
-                <!-- 链接待添加 {{item.user.image_url[0]}}-->
-                <image src="../../images1/image/food.png" wx:if="{{item.user.image_url[0]!=null}}"></image>
-                <image src="../../images1/image/food.png" wx:if="{{item.user.image_url[1]!=null}}"></image>
-            </view>
-        </view>
-        <view class="card-part user-comment">
-            <view class="user-info">
-                <!-- {{item.user.user_profile_photo_url}} -->
-                <image src="../../images1/image/user-img.png"></image>
-                <text>{{item.user.user_name}}</text>
-            </view>
-            <view class="commet-content">
-                {{item.user.comment.comment_content}}
-                这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论
-            </view>
-        </view>
-        <view class="card-part comment-infos">
-            <view class="comment-info">
-                <image src="../../images1/image/like.svg" bindtap="changeLike" data-count="{{item.user.comment.comment_like_count}}"></image>
-                <text>{{item.user.comment.comment_like_count}}</text>
-            </view>
-            <view class="comment-info">
-                <image src="../../images1/image/message.svg"></image>
-                <text>{{item.user.comment.comment_review_count}}</text>
-            </view>
-        </view>
-    </view>
+    <comment-card wx:for="{{info}}" wx:key="index" shop_name="{{shop_name}}" for_shop_score="{{item.shop.shop_score}}" for_user_name="{{item.user.user_name}}" for_like_count="{{item.user.comment.comment_like_count}}" for_review_count="{{item.user.comment.comment_review_count}}" if_image_url_1="{{item.user.image_url[0]!=null}}" if_image_url_2="{{item.user.image_url[1]!=null}}"></comment-card>
 </view>

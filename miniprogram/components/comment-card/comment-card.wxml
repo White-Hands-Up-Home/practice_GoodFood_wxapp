@@ -1,0 +1,36 @@
+<view class="comment-card">
+<!-- for_开头代表循环内数据 -->
+        <view class="card-part shop-self">
+            <view class="shop-name">
+                <image src="../../images1/image/coordinates_fill.svg"></image>
+                <text>{{shop_name}}</text>
+                <view>评分{{for_shop_score}}</view>
+            </view>
+            <view class="shop-pic">
+                <!-- 链接待添加 {{item.user.image_url[0]}}-->
+                <image src="../../images1/image/food.png" wx:if="{{if_image_url_1}}"></image>
+                <image src="../../images1/image/food.png" wx:if="{{if_image_url_2}}"></image>
+            </view>
+        </view>
+        <view class="card-part user-comment">
+            <view class="user-info">
+                <!-- {{item.user.user_profile_photo_url}} -->
+                <image src="../../images1/image/user-img.png"></image>
+                <text>{{for_user_name}}</text>
+            </view>
+            <view class="commet-content">
+                {{for_comment_content}}
+                这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论
+            </view>
+        </view>
+        <view class="card-part comment-infos">
+            <view class="comment-info">
+                <image src="../../images1/image/like.svg" bindtap="changeLike" data-count="{{for_like_count}}"></image>
+                <text>{{for_like_count}}</text>
+            </view>
+            <view class="comment-info">
+                <image src="../../images1/image/message.svg"></image>
+                <text>{{for_review_count}}</text>
+            </view>
+        </view>
+    </view>

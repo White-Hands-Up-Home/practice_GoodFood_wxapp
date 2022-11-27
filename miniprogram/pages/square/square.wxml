@@ -7,6 +7,7 @@
 <scroll-view class="box" scroll-y>
 <view class="stores" wx:for="{{stores}}" wx:key="index"> 
   <view class="list">
+<<<<<<< HEAD
    <view class="head">
      <image class="location" src="../../images/xrxmui(1)/svg/coordinates_fill.svg"></image>
      <text class="storeName" bindtap="goToDetail">店铺名称</text>
@@ -14,6 +15,17 @@
    </view>
     
     <!-- 星星图形 -->
+=======
+    <image class="location" src="../../images/xrxmui(1)/svg/coordinates_fill.svg"></image>
+    <text class="storeName" bindtap="goToDetail">店铺名称</text>
+    <image class="v-prove" src="../../images1/image/v认证.png" ></image>
+
+<!-- 星星组件 -->
+    <view class="mb-5">
+		<star bind:staring="staring"></star>
+	</view>
+
+>>>>>>> master
 
     <scroll-view class="photos" scroll-x="true">
        <view class="photo-list">
