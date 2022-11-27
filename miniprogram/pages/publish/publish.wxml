@@ -1,2 +1,42 @@
-<!--pages/publish/publish.wxml-->
-<text>pages/publish/publish.wxml</text>
+<input class="input1" placeholder="添加店铺"></input>
+
+<!-- 图标和店铺名 -->
+<view class="head">
+    <image class="location" src="../../images/xrxmui(1)/svg/coordinates_fill.svg"></image>
+    <text class="storeName" bindtap="goToDetail">店铺名称</text>
+</view>
+
+<!-- 星星组件 -->
+<view class="mb-5" wx:for="{{optionList}}" wx:key="index">
+	<score bind:scoring="scoring" id="{{item}}"></score>
+</view>
+
+<!-- 输入框 -->
+<textarea class="input2" placeholder="输入评价内容......">
+</textarea>
+
+<!-- 点击上传图片 -->
+<text class="word-class">点击上传图片，长按删除</text>
+<!--以下为图片选择-->
+<view class="img_box">
+  <view class="imgs" wx:for="{{tempFilePaths}}" wx:key="index">
+    <image src='{{item}}' bindlongpress="DeleteImg" bindtap="PreviewImg" data-index="{{index}}" mode='widthFix' />
+  </view>
+  <view class="imgs">
+    <view class="images" bindtap="ChooseImg">
+      <image src='../../images/xrxmui(1)/svg/camera.svg' mode='widthFix' />
+    </view>
+  </view>
+</view>
+
+<!--上传按钮-->
+<view class="UploadBtnarea">
+  <button class="UploadBtnclass" style="width: 70%;" bindtap="UploadBtntap">
+    <view>发布评价</view>
+    <image src="../../images/xrxmui(1)/svg/send (1).svg"></image>
+  </button>
+</view>
+
+
+
+

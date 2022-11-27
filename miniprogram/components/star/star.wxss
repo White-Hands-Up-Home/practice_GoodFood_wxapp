@@ -1,0 +1,12 @@
+.stars-box{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 50rpx;
+    margin: 20rpx;
+}
+
+.star{
+    height: 60rpx;
+    width: 60rpx;
+}

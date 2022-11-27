@@ -1,1 +1,133 @@
 /* pages/publish/publish.wxss */
+.input1{
+    background-color: rgb(199, 196, 191);
+    height: 80rpx;
+    margin: 30rpx;
+    margin-left: 7%;
+    margin-right: 7%; 
+    border-radius: 50rpx;
+    text-decoration-color: rgb(199, 196, 191);
+    padding-left: 40rpx;
+}
+
+.location{
+    height: 60rpx;
+    width: 60rpx;
+}
+
+.storeName{
+    color: rgb(32, 25, 19);
+    font-size: large;
+    font-weight: 800;
+}
+
+.head{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 30rpx;
+    margin-bottom: 0rpx;
+}
+
+.input2{
+    border: solid 1px grey;
+    width: auto;
+    height: 330rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}
+
+
+
+
+.word-class{
+    font-size: 14px;
+    color: rgb(95, 87, 87);  
+    margin-left: 10px;
+  }
+
+  
+  /* 选择图片 */
+  .img_box{
+    width:690rpx;
+    height: 340rpx;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 auto;
+    padding-top: 20px;
+  }
+  
+  .imgs{
+    width:33.33333333%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:20rpx;
+  }
+  
+  .imgs image{
+    width:90%;
+    max-height:212rpx;
+    border:1px solid rgba(214, 212, 212, 0.1);
+  }
+  
+  .imgs .images{
+    position:relative;
+  }
+  
+  .images button{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  
+  .img_box .images{
+    width:90%;
+    height: 212rpx;
+    border:1px dashed #4b4b4b;
+    border-radius:30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img_box .images>image{
+    width:60rpx;
+    height:60rpx;
+  }
+  
+  /* 上传按钮 */
+  .UploadBtnarea{
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .UploadBtnclass{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+    box-shadow: 5rpx 7rpx 5rpx #aaa9a9e1;
+    border-radius: 50rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .UploadBtnclass view{
+      font-size: 40rpx;
+      color: rgb(253, 169, 12);
+      width: 40%;
+      padding: 4rpx;
+  }
+
+  .UploadBtnclass image{
+      height: 60rpx;
+      width: 60rpx;
+  }
+  

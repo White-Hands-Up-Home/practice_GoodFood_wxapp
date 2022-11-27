@@ -21,6 +21,13 @@
     box-shadow: 5rpx 10rpx 5rpx #aaa9a9e1;
 }
 
+.head{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 30rpx;
+}
+
 /* 选框样式-圆型 */
 .checkrideo .wx-checkbox-input {
     border-radius: 50%;
@@ -44,16 +51,14 @@
   }
 
   .location{
-      height: 80rpx;
-      width: 80rpx;
+      height: 60rpx;
+      width: 60rpx;
   }
 
   .storeName{
       color: rgb(32, 25, 19);
-      font-size: x-large;
+      font-size: large;
       font-weight: 800;
-      position: relative;
-      top: -25rpx;
   }
 
   .v-prove{
@@ -63,13 +68,13 @@
 
   .photo-list{
       height: 260rpx;
-      width: 1150rpx;
+      width: 1290rpx;
       display: flex;
       overflow: hidden;
   }
 
   .photo-list image {
-    width: 360rpx;
+    width: 400rpx;
     height: 240rpx;
     flex-shrink: 0;
     border-radius: 31.5rpx;
@@ -129,4 +134,5 @@
     width: 60rpx;
     height: 60rpx;
   }
+
   

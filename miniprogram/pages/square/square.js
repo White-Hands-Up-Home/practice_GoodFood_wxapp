@@ -59,21 +59,6 @@ Page({
         })
     },
 
-      // 评分
-  scoring: function(e) {
-    // console.log(e.detail.fraction)
-    let optionsList = this.data.optionList
-    optionsList.map(item => {
-      const child = this.selectComponent(`#${item}`);
-      // console.log(child.data.number)
-      let key = `${item}Fraction`
-      this.setData({
-        [key]: child.data.number
-      })
-    })
-  },
-
-
     /**
      * 生命周期函数--监听页面加载
      */

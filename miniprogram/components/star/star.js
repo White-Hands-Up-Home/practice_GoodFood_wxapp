@@ -12,11 +12,11 @@ Component({
      */
     data: {
       list: [
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
-        '/miniprogram/images/xrxmui(1)/svg/like.svg',
+        '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
+        '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
+        '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
+        '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
+        '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
       ],
       number: 0
     },
@@ -25,23 +25,23 @@ Component({
      * 组件的方法列表
      */
     methods: {
-      staring: function (e) {   
+      scoring: function (e) {   
         let idx = e.target.dataset.index
         let list = [
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
-          '/miniprogram/images/xrxmui(1)/svg/like.svg',
+            '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
+            '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
+            '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
+            '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
+            '../../images/xrxmui(1)/svg/经典案例_空五角星_收藏.svg',
         ]
         for (let i = 0; i <= idx; i++) {
-          list[i] = '/miniprogram/images/xrxmui(1)/svg/like_fill.svg'
+          list[i] = '../../images/xrxmui(1)/svg/经典案例_五角星_收藏后.svg'
         }
         this.setData({
           list,
           number: idx + 1
         })
-        this.triggerEvent('staring', {fraction: this.data.number})
+        this.triggerEvent('scoring', {fraction: this.data.number})
       }
     }
   })
