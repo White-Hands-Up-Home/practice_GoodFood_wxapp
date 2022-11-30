@@ -13,12 +13,31 @@
         </view>
         <view class="buttons">
             <button style="width: 210rpx;" bindtap="goToCollection">我的收藏</button>
-            <button style="width: 210rpx;">作者认证</button>
+            <button style="width: 210rpx;" bindtap="onClickShow">作者认证</button>
             <button style="width: 210rpx;" bindtap="goToHelp">使用指南</button>
         </view>
-
     </view>
     <view class="comments">
-        <comment-card wx:for="{{info.comment}}" wx:key="index" shop_name="{{item.shop_name}}" for_shop_score="{{item.score}}" for_user_name="{{info.user_name}}" for_like_count="{{item.like_num}}" for_review_count="{{item.huitie_num}}" if_image_url_1="{{item.image_1!=null}}" if_image_url_2="{{item.image_2!=null}}"></comment-card>
+        <view class="text">我的评价</view>
+        <comment-card wx:for="{{info.comment}}" wx:key="index" shop_name="{{item.shop_name}}" for_shop_score="{{item.score}}" for_user_name="{{info.user_name}}" for_like_count="{{item.like_num}}" for_review_count="{{item.huitie_num}}" if_image_url_1="{{item.image_1!=null}}" if_image_url_2="{{item.image_2!=null}}" if_image_url_3="{{item.image_3!=null}}" for_comment_content="{{item.content}}"></comment-card>
     </view>
 </view>
+<van-overlay show="{{ show }}" bind:click="onClickHide">
+    <view class="wrapper">
+        <view class="block" catch:tap="noop">
+            <block wx:if="{{!is_ChiHu.is2}}">
+                <form action="" catchsubmit="submitSchoolNum">
+                    <input class="input" name="input" type="number" placeholder="输入学号" maxlength="13" placeholder-class="input-text" bindconfirm="submitSchoolNum" />
+                    <button class="button" form-type="submit">认证</button>
+                </form>
+            </block>
+            <block wx:if="{{is_ChiHu.is2}}" class="congrats-box">
+                <view class="congrats">恭喜您成为吃乎作者</view>
+                <view class="success">
+                    <view>认证成功</view>
+                    <image src="../../images/对勾小.png"></image>
+                </view>
+            </block>
+        </view>
+    </view>
+</van-overlay>

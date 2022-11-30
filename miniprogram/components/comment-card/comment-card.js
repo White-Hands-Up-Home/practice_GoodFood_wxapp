@@ -12,6 +12,7 @@ Component({
         for_shop_score:Number,
         if_image_url_1:Number,
         if_image_url_2:Number,
+        if_image_url_3:Number,
         for_user_name:String,
         for_like_count:Number,
         for_review_count:Number,
@@ -30,6 +31,8 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
+        changeLike(e){
+            console.log(e);
+        }
     }
 })

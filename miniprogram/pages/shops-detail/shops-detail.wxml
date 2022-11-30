@@ -32,5 +32,5 @@
             <checkbox></checkbox>
         </label>
     </view>
-    <comment-card wx:for="{{info}}" wx:key="index" shop_name="{{shop_name}}" for_shop_score="{{item.shop.shop_score}}" for_user_name="{{item.user.user_name}}" for_like_count="{{item.user.comment.comment_like_count}}" for_review_count="{{item.user.comment.comment_review_count}}" if_image_url_1="{{item.user.image_url[0]!=null}}" if_image_url_2="{{item.user.image_url[1]!=null}}"></comment-card>
+    <comment-card wx:for="{{info}}" wx:key="index" shop_name="{{shop_name}}" for_shop_score="{{item.shop.shop_score}}" for_user_name="{{item.user.user_name}}" for_like_count="{{item.user.comment.comment_like_count}}" for_review_count="{{item.user.comment.comment_review_count}}" if_image_url_1="{{item.user.image_url[0]!=null}}" if_image_url_2="{{item.user.image_url[1]!=null}}" if_image_url_3="{{item.user.image_url[2]!=null}}"></comment-card>
 </view>

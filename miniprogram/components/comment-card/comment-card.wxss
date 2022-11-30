@@ -91,4 +91,7 @@
     width: 60rpx;
     height: 60rpx;
   }
-  
+  .scroll{
+      display: flex;
+      height: 203rpx;
+  }

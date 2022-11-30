@@ -5,8 +5,12 @@ Page({
      * 页面的初始数据
      */
     data: {
+        show:false,
         if_ChiHu:true,
         school_num:20223000000,
+        is_ChiHu:{
+            is2: false
+          },
         info: {
             image: "http://dummyimage.com/400x400",
             user_name: "阿尼亚",
@@ -79,6 +83,45 @@ Page({
           complete: (res) => {},
         })
     },
+    onClickShow() {
+        this.setData({ show: true });
+        console.log("show");
+      },
+    
+      onClickHide() {
+        this.setData({ show: false });
+        console.log("hide");
+      },
+      submitSchoolNum(e){
+          console.log(e.detail.value.input);
+          wx.showLoading({
+            title: 'ok',
+          })
+          wx.request({
+            url: '',
+            method:"POST",
+            data:{
+                id:e.detail.value.input
+            },
+            success:()=>{
+                console.log("success")
+                
+            },
+            fail:()=>{
+                console.log("fail")
+            },
+            complete:()=>{
+                wx.hideLoading({
+                    success: (res) => {},
+                  })
+            }
+          })
+          this.setData({
+              "is_ChiHu.is2":true
+          })
+      },
+    
+      noop() {},
 
     /**
      * 生命周期函数--监听页面加载

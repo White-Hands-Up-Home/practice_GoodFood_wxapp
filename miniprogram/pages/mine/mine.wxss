@@ -70,6 +70,76 @@
     background-color: rgb(63, 62, 62);
 }
 .comments{
-    margin-top: 20rpx;
+    border-radius: 43.75rpx 43.75rpx 0 0;
+    border: 1px solid grey;
 }
+.text {
+    text-align: center;
+    height: 106.75rpx;
+    line-height: 106.75rpx;
+    border-bottom: 5rpx solid #707070;
+    font-size: 35rpx;
+    color: #74665D;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .block {
+    width: 582.75rpx;
+    height: 346.5rpx;
+    border-radius: 35rpx;
+    background-color: #FFE3CC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .wrapper .block .input{
+      width: 442.75rpx;
+      height: 98rpx;
+      background-color: white;
+      border-radius: 49rpx;
+      color: black;
+      font-size: 35rpx;
+  }
+  .wrapper .block .button{
+      width: 210rpx;
+      height: 101.5rpx;
+      background-color: white;
+      border-radius: 50rpx;
+  }
+  .input-text{
+      color: #463124;
+      font-size: 35rpx;
+      margin-left: 50rpx;
+  }
+  .success image{
+      width: 59.5rpx;
+      height: 59.5rpx;
+      margin-left: 20rpx;
 
+  }
+  .congrats-box{
+      display: flex;
+      flex-direction: column;
+  }
+  .success{
+      display: flex;
+        color: #07C160;
+        font-size: 42rpx;
+        font-weight: bold;
+  }
+  .congrats{
+      font-size: 42rpx;
+      font-weight: bold;
+  }
+.block .button{
+    color: #463124;
+      font-size: 50rpx;
+      margin-top: 30rpx;
+      font-weight: 400;
+}

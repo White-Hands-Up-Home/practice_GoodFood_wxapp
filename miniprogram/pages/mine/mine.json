@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-        "comment-card":"../../components/comment-card/comment-card"
+        "comment-card":"../../components/comment-card/comment-card",
+        "van-overlay": "@vant/weapp/overlay/index"
     }
 }
