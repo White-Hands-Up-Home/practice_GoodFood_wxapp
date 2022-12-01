@@ -1,0 +1,13 @@
+<view id="body">
+    <form action="" catchsubmit="changeName">
+        <view class="parts header">
+            <button id="button" bindtap="goBack">取消</button>
+            <view>编辑名字</view>
+            <button id="button"  form-type="submit">保存</button>
+        </view>
+        <view class="parts">
+            <input type="text" name="input" maxlength="20"/>
+        </view>
+        <view class="parts hint">请设置2-20个字符</view>
+    </form>
+</view>

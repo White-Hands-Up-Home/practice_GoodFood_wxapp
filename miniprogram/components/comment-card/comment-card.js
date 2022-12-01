@@ -33,6 +33,16 @@ Component({
     methods: {
         changeLike(e){
             console.log(e);
+        },
+        goToComment(){
+            console.log("fun");
+            wx.navigateTo({
+              url: '../../pages/square-detail/square-detail',
+            //   events: events,
+              success: (result) => {},
+              fail: (res) => {},
+              complete: (res) => {},
+            })
         }
     }
 })

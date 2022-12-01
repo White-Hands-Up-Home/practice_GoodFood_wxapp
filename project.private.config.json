@@ -73,6 +73,13 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "改名",
+                    "pathName": "pages/changeName/changeName",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

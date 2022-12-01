@@ -2,12 +2,12 @@
     <view class="header">
         <image class="bac" src="../../images1/image/bac.png"></image>
         <view class="user-info">
-            <view class="head-pic">
-                <image src="../../images1/image/user-img.png"></image>
+            <view class="head-pic" bindtap="changePhoto">
+                <image src="{{user_img}}"></image>
                 <image class="v-prove" src="../../images1/image/v认证.png" wx:if="{{if_ChiHu}}"></image>
             </view>
             <view class="infos">
-                <text>{{info.user_name}}</text>
+                <text bindtap="goToChangeName">{{info.user_name}}</text>
                 <text>学号：{{school_num}}</text>
             </view>
         </view>

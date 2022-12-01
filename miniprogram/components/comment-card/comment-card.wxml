@@ -4,7 +4,14 @@
         <view class="shop-name">
             <image src="../../images1/image/coordinates_fill.svg"></image>
             <text>{{shop_name}}</text>
-            <view>评分{{for_shop_score}}</view>
+            <!-- <view>评分{{for_shop_score}}</view> -->
+            <view class="stars">
+                <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=1?'fill':'no-fill'}}.svg"></image>
+                <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=3?'fill':'no-fill'}}.svg"></image>
+                <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=5?'fill':'no-fill'}}.svg"></image>
+                <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=7?'fill':'no-fill'}}.svg"></image>
+                <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=9?'fill':'no-fill'}}.svg"></image>
+            </view>
         </view>
         <view class="shop-pic">
             <!-- 链接待添加 {{item.user.image_url[0]}}-->
@@ -32,7 +39,7 @@
             <text>{{for_like_count}}</text>
         </view>
         <view class="comment-info">
-            <image src="../../images1/image/message.svg"></image>
+            <image src="../../images1/image/message.svg" bindtap="goToComment"></image>
             <text>{{for_review_count}}</text>
         </view>
     </view>

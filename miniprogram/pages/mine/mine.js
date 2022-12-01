@@ -5,6 +5,7 @@ Page({
      * 页面的初始数据
      */
     data: {
+        user_img:"../../images1/image/user-img.png",
         show:false,
         if_ChiHu:true,
         school_num:20223000000,
@@ -37,7 +38,7 @@ Page({
                 {
                     "user_name": "罗丽",
                     "shop_name": "查住毛别治",
-                    "score": 31,
+                    "score": 6,
                     "image_1": "http://dummyimage.com/400x400",
                     "content": "cillum consectetur",
                     "image_2": "http://dummyimage.com/400x400",
@@ -47,7 +48,7 @@ Page({
                 {
                     "user_name": "高娟",
                     "shop_name": "养立只十确关身",
-                    "score": 59,
+                    "score": 4,
                     "image_1": "http://dummyimage.com/400x400",
                     "content": "dolore",
                     "image_2": "http://dummyimage.com/400x400",
@@ -57,7 +58,7 @@ Page({
                 {
                     "user_name": "陆秀兰",
                     "shop_name": "量心无民不验任",
-                    "score": 81,
+                    "score": 2,
                     "image_1": "http://dummyimage.com/400x400",
                     "content": "anim nisi aliqua eu",
                     "image_2": "http://dummyimage.com/400x400",
@@ -66,6 +67,17 @@ Page({
                 }
             ]
         },
+    },
+    changePhoto(){
+        wx.chooseImage({
+          count: 1,
+          sizeType: ['original','compressed'],
+          success:(res)=>{
+              this.setData({
+                  user_img:res.tempFilePaths
+              })
+          }
+        })
     },
     goToCollection(){
         wx.navigateTo({
@@ -104,8 +116,7 @@ Page({
                 id:e.detail.value.input
             },
             success:()=>{
-                console.log("success")
-                
+                console.log("success");
             },
             fail:()=>{
                 console.log("fail")
@@ -120,7 +131,11 @@ Page({
               "is_ChiHu.is2":true
           })
       },
-    
+      goToChangeName(){
+          wx.navigateTo({
+            url: '../changeName/changeName?user_name=' + this.data.info.user_name,
+          })
+      },
       noop() {},
 
     /**
@@ -141,7 +156,11 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow() {
-
+        var name = wx.getStorageSync('user_name');
+        if(name!=''){
+        this.setData({
+            "info.user_name":name,
+        })}
     },
 
     /**

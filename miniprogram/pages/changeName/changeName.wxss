@@ -1,0 +1,30 @@
+/* pages/changeName/changeName.wxss */
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+page{
+    background-color: black;
+    color: white;
+    font-size: 42rpx;
+}
+#button{
+    color: white;
+    font-size: 42rpx;
+    width: 84rpx;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+input{
+    width: 651rpx;
+    height: 129.5rpx;
+    border-radius: 35rpx;
+    background-color: #7D7D7D;
+    margin: 0 auto;
+    margin-top: 40rpx;
+    margin-bottom: 70rpx;
+}
+.hint{
+    margin-left: 50rpx;
+}
