@@ -29,8 +29,7 @@
             <text>{{for_user_name}}</text>
         </view>
         <view class="commet-content">
-            {{for_comment_content}}
-            这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论
+         {{for_comment_content}} 这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论
         </view>
     </view>
     <view class="card-part comment-infos">

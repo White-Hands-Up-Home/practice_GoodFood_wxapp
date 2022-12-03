@@ -3,7 +3,7 @@
         <image class="bac" src="../../images1/image/bac.png"></image>
         <view class="user-info">
             <view class="head-pic" bindtap="changePhoto">
-                <image src="{{user_img}}"></image>
+                <image src="{{user_img}}" mode="aspectFill"></image>
                 <image class="v-prove" src="../../images1/image/v认证.png" wx:if="{{if_ChiHu}}"></image>
             </view>
             <view class="infos">

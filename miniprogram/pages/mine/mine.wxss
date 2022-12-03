@@ -51,6 +51,8 @@
     border-radius: 50%;
     width: 192.5rpx;
     height: 192.5rpx;
+    object-fit: cover;
+    object-position: center;
 }
 .buttons{
     display: flex;

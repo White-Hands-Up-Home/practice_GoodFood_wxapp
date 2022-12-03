@@ -48,8 +48,16 @@
     /* display: flex; */
     /* justify-content: flex-start;
       align-content: flex-start; */
-    border-bottom: 2px solid #707070;
+
+    max-height: 250rpx;
+    width: 660rpx;
+    text-overflow: ellipsis;
+    /* white-space: nowrap;  */
+    overflow: hidden;
+      /* overflow: hidden; */
+    
   }
+  
   .comment-card .user-comment .user-info {
     height: 98rpx;
     /* background-color: red; */
@@ -77,6 +85,7 @@
   }
   .comment-card .comment-infos {
     display: flex;
+    border-top: 2px solid #707070;
     justify-content: space-around;
     align-items: center;
     height: 87.5rpx;
@@ -93,7 +102,8 @@
   }
   .scroll{
       display: flex;
-      height: 203rpx;
+      height: 230rpx;
+      /* align-items: center; */
   }
   .stars{
       display: flex;
