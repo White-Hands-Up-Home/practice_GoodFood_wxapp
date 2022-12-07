@@ -7,88 +7,7 @@ Page({
      */
     data: {
         count: 12,
-        info: [{
-                shop_name: "工学部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 10,
-                comment_count: 56,
-                shop_isChiHu:true
-            },
-            {
-                shop_name: "信部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 5,
-                comment_count: 84,
-                shop_isChiHu:false
-            },
-            {
-                shop_name: "医学部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 4,
-                comment_count: 67,
-                shop_isChiHu:true
-            },
-            {
-                shop_name: "工学部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 10,
-                comment_count: 56,
-                shop_isChiHu:false
-            },
-            {
-                shop_name: "信部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 5,
-                comment_count: 84,
-                shop_isChiHu:true
-            },
-            {
-                shop_name: "医学部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 4,
-                comment_count: 67,
-                shop_isChiHu:true
-            }, {
-                shop_name: "工学部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 10,
-                comment_count: 56,
-                shop_isChiHu:true
-            },
-            {
-                shop_name: "信部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 5,
-                comment_count: 84,
-                shop_isChiHu:true
-            },
-            {
-                shop_name: "医学部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 4,
-                comment_count: 67,
-                shop_isChiHu:true
-            }, {
-                shop_name: "工学部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 10,
-                comment_count: 56,
-                shop_isChiHu:true
-            },
-            {
-                shop_name: "信部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 5,
-                comment_count: 84,
-                shop_isChiHu:true
-            },
-            {
-                shop_name: "医学部小吃",
-                shop_profile_photo: "iamge_url",
-                shop_score: 4,
-                comment_count: 67,
-                shop_isChiHu:true
-            }
+        info: [
         ]
 
     },
@@ -114,12 +33,29 @@ Page({
             url: '/pages/square/square',
         })
     },
-
+    getInfo(){
+        wx.request({
+            url: 'http://127.0.0.1:4523/m1/1961063-0-default/shop',
+            method:"GET",
+            success:(res)=>{
+               // console.log(res);
+               this.setData({
+                   info:[...this.data.info,...res.data]
+               })
+            },
+            complete:()=>{
+              wx.hideLoading({
+                success: (res) => {},
+              })
+            },
+          })
+          
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-       
+      this.getInfo()
     },
 
     /**
@@ -133,6 +69,9 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow() {
+        this.getInfo();
+ 
+
 
     },
 
@@ -161,8 +100,12 @@ Page({
     /**
      * 页面上拉触底事件的处理函数
      */
-    onReachBottom() {
-        console.log("active");
+    onReachBottom:function(){
+        wx.showLoading({
+          title: '数据加载中',
+        }),
+        this.getInfo();
+        console.log(1);
     },
 
     /**

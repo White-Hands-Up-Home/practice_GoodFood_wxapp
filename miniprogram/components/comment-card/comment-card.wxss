@@ -49,7 +49,7 @@
     /* justify-content: flex-start;
       align-content: flex-start; */
 
-    max-height: 250rpx;
+    /* max-height: 250rpx; */
     width: 660rpx;
     text-overflow: ellipsis;
     /* white-space: nowrap;  */

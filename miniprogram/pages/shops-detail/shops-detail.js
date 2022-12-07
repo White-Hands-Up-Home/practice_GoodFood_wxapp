@@ -10,344 +10,25 @@ Page({
         shop_comment_count: null,
         shop_score: null,
         data_count: 12,
-        info: [{
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
-            {
-                user: {
-                    time: "2021-11-17",
-                    user_name: "Tom",
-                    user_profile_photo_url: "image_url",
-                    is_ChiHu: true,
-                    comment: {
-                        comment_id: "001",
-                        comment_content: "xxxx",
-                        comment_like_count: 12,
-                        comment_review_count: 13
-                    },
-                    image_url: [
-                        "iamge1_url",
-                        "image2_url",
-                        "iamge3_url"
-                    ]
-                },
-                shop: {
-                    shop_id: "str",
-                    shop_name: "工学部小吃",
-                    shop_score: 10
-                }
-            },
+        info: [
         ]
 
+    },
+    getComments(){
+        wx.request({
+          url: 'http://127.0.0.1:4523/m1/1961063-0-default/shop/details',
+          method:"GET",
+          success:(res)=>{
+              this.setData({
+                  info:[...this.data.info,...res.data],
+              })
+          },
+          complete:()=>{
+              wx.hideLoading({
+                success: (res) => {},
+              })
+          }
+        })
     },
     // changeLike(e) {
     //     console.log(e);
@@ -375,7 +56,8 @@ Page({
             shop_name: name,
             shop_comment_count: comment,
             shop_score: score,
-        })
+        });
+        this.getComments();
 
     },
 
@@ -411,14 +93,18 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh() {
-
+        
     },
 
     /**
      * 页面上拉触底事件的处理函数
      */
     onReachBottom() {
-
+        wx.showLoading({
+          title: '加载数据中',
+        })
+        this.getComments();
+        // console.log(22);
     },
 
     /**

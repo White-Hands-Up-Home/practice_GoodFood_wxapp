@@ -48,37 +48,37 @@ page{
     font-size: 35rpx;
     color: #463124;
 }
-.shops{
+/* {
     height: 100%;
     background-color: #FFE3CD;
-}
-.shops .shop .shop-info{
+} */
+ .shop .shop-info{
     margin-left: -135rpx;
 }
-.shops .shop .shop-info-detail{
+ .shop .shop-info-detail{
     white-space: nowrap;
     word-break: keep-all;
 }
-.shops .shop .image-container{
+ .shop .image-container{
     width: 97rpx;
     height: 97rpx;
     margin-right: 72rpx;
 }
-.shops .shop .image-container image{
+ .shop .image-container image{
     width: 97rpx;
     height: 97rpx;
 }
-.shops .shop .shop-image-container{
+ .shop .shop-image-container{
     width: 140rpx;
     height: 140rpx;
     margin-left: 49rpx;
 }
-.shops .shop .shop-image-container image{
+ .shop .shop-image-container image{
     width: 140rpx;
     height: 140rpx;
     border-radius: 17.5rpx;
 }
-.shops .shop .comment-count{
+ .shop .comment-count{
     color: #707070;
 }
 .selector-container checkbox .wx-checkbox-input{
