@@ -34,7 +34,7 @@
     </view>
     <view class="card-part comment-infos">
         <view class="comment-info">
-            <image src="../../images1/image/like.svg" bindtap="changeLike" data-if="{{flase}}" data-count="{{for_like_count}}"></image>
+            <image src="{{for_like_url}}" bindtap="changeLike" data-count="{{for_like_count}}" id="{{for_comment_id}}"></image>
             <text>{{for_like_count}}</text>
         </view>
         <view class="comment-info">

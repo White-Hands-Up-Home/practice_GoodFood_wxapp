@@ -16,7 +16,9 @@ Component({
         for_user_name:String,
         for_like_count:Number,
         for_review_count:Number,
-        for_comment_content:String
+        for_comment_content:String,
+        for_like_url:String,
+        for_comment_id:String,
 
     },
 
@@ -32,7 +34,14 @@ Component({
      */
     methods: {
         changeLike(e){
-            console.log(e);
+            const this_id = e.currentTarget.id;
+            console.log(this_id);
+            this.triggerEvent('myevent',{
+                this_id
+            });
+            console.log(this.properties.for_like_url);
+
+            // console.log(this_comment);
         },
         goToComment(){
             console.log("fun");

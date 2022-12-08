@@ -5,29 +5,58 @@ Page({
      * 页面的初始数据
      */
     data: {
+        defaultIsLiked: false,
+        // isShow:true,
         like_svg: "../../images1/image/like.svg",
         shop_name: null,
         shop_comment_count: null,
         shop_score: null,
         data_count: 12,
-        info: [
-        ]
+        info: []
 
     },
-    getComments(){
+    onMyEvent: function (event) {
+        // console.log(event);
+        const this_comment_Index = this.data.info.findIndex((item) =>
+            item.user.comment.comment_id == event.detail.this_id
+        )
+        // console.log(this_comment);
+        console.log(this_comment_Index);
+        if (this.data.info[this_comment_Index].isLiked) 
+        {
+            this.setData({
+                [`info[${this_comment_Index}].isLiked`]: false,
+                [`info[${this_comment_Index}].user.comment.comment_like_count`]:this.data.info[this_comment_Index].user.comment.comment_like_count - 1
+            });
+            // this_comment.isLiked=false;
+        } else 
+        {
+            this.setData({
+                [`info[${this_comment_Index}].isLiked`]: true,
+                [`info[${this_comment_Index}].user.comment.comment_like_count`]:this.data.info[this_comment_Index].user.comment.comment_like_count + 1
+            });
+            // this_comment.isLiked=true;
+        }
+        // console.log(this_comment);
+        // console.log(this.data.info);
+    },
+    getComments() {
         wx.request({
-          url: 'http://127.0.0.1:4523/m1/1961063-0-default/shop/details',
-          method:"GET",
-          success:(res)=>{
-              this.setData({
-                  info:[...this.data.info,...res.data],
-              })
-          },
-          complete:()=>{
-              wx.hideLoading({
-                success: (res) => {},
-              })
-          }
+            url: 'http://127.0.0.1:4523/m1/1961063-0-default/shop/details',
+            method: "GET",
+            success: (res) => {
+                res.data.forEach((comment) => {
+                    comment.isLiked = this.data.defaultIsLiked;
+                });
+                this.setData({
+                    info: [...this.data.info, ...res.data],
+                })
+            },
+            complete: () => {
+                wx.hideLoading({
+                    success: (res) => {},
+                })
+            }
         })
     },
     // changeLike(e) {
@@ -36,7 +65,7 @@ Page({
     //         this.setData({
     //             like_svg: "../../images1/image/like.svg",
     //         })
-            
+
     //     } else {
     //         this.setData({
     //             like_svg: "../../images1/image/like_fill.png",
@@ -93,7 +122,7 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh() {
-        
+
     },
 
     /**
@@ -101,7 +130,7 @@ Page({
      */
     onReachBottom() {
         wx.showLoading({
-          title: '加载数据中',
+            title: '加载数据中',
         })
         this.getComments();
         // console.log(22);
