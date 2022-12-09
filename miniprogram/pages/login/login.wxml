@@ -1,0 +1,12 @@
+<image id="bac" src="../../images1/image/login.png" mode="aspectFill"></image>
+<view id="header">
+    <view class="text">珈有</view>
+    <view class="text">好食</view>
+</view>
+<view>
+    <form action="" class="form">
+        <input class="input" type="number" placeholder="输入学号" placeholder-class="placeholder" />
+        <input class="input" type="text" placeholder="输入密码" placeholder-class="placeholder" />
+        <button id="button" bindtap="goToFirst">登入</button>
+    </form>
+</view>

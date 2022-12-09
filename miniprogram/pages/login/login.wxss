@@ -1,0 +1,63 @@
+/* pages/login/login.wxss */
+page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+#header .text{
+    font-size: 152.25rpx;
+    color: rgba(187, 193, 206, 1);
+}
+#header .text:nth-child(1){
+    margin-right :350rpx;
+}
+#header .text:nth-child(2){
+    margin-left: 150rpx;
+}
+#bac {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* object-fit:fill; */
+    z-index: -1;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form .input {
+    z-index: 4;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.16);
+    border-radius: 50rpx;
+    width: 337.75rpx;
+    height: 87.5rpx;
+    margin-top: 33.25rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+}
+.form .input:nth-child(1){
+    margin-top: 350rpx;
+}
+.form #button {
+    background-color: rgba(210, 187, 171, 0.7);
+    color: rgba(70, 49, 36, 1);
+    font-size: 43.75rpx;
+    width: 252rpx;
+    height: 87.5rpxs;
+    border-radius: 50rpx;
+    margin-top: 49rpx;
+}
+.form #button:active{
+    background-color: rgba(210, 187, 171, 1);
+}
+.form .placeholder{
+    text-align: center;
+    color: white;
+    font-size: 35rpx;
+}
