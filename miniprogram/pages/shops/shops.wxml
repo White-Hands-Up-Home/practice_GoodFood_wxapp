@@ -11,7 +11,7 @@
     </radio-group>
     <label class="selector">
         <text>吃乎认证</text>
-        <checkbox></checkbox>
+        <radio></radio>
     </label>
 </view>
 <scroll-view class="shops" scroll-y>

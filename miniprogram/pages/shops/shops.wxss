@@ -91,9 +91,9 @@ page{
     width: 32rpx; /* 背景的宽 */
     height: 32rpx; /* 背景的高 */
 }
-.selector-container radio .wx-radio-input-checked{
-    border-radius: 50%;
-    background-color: red;
+.selector-container>.selector checkbox .wx-radio-input-checked{
+    /* border-radius: 50%; */
+    background-color:green !important;
 }
 
 .stars{
