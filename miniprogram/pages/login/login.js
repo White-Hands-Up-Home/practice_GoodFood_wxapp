@@ -1,4 +1,7 @@
 // pages/login/login.js
+import {createStoreBindings} from 'mobx-miniprogram-bindings'
+import { store } from '../../store/store'
+
 Page({
 
     /**
@@ -12,9 +15,15 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
+        this.storeBindings = createStoreBindings(this,{
+            store,
+            filed:['isLogined'],
+            actions:['login']
+        })
 
     },
     goToFirst(){
+        this.login();
         wx.switchTab({
           url: '../square/square',
         })

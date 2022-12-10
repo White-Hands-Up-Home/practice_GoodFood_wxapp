@@ -1,4 +1,7 @@
 // pages/mine/mine.js
+import { createStoreBindings } from 'mobx-miniprogram-bindings'
+import { store } from '../../store/store'
+
 Page({
 
     /**
@@ -44,6 +47,12 @@ Page({
 
     },
     onMyEvent: function (event) {
+        if (!this.data.isLogined) {
+            wx.navigateTo({
+              url: '../login/login',
+            })
+            return
+        }
         // console.log(event);
         const this_comment_Index = this.data.info.comment.findIndex((item) =>
             item.comment_id == event.detail.this_id
@@ -80,6 +89,12 @@ Page({
         })
     },
     goToCollection(){
+        if (!this.data.isLogined) {
+            wx.navigateTo({
+              url: '../login/login',
+            })
+            return
+        }
         wx.navigateTo({
           url: '../collection/collection',
           success: (result) => {},
@@ -96,6 +111,12 @@ Page({
         })
     },
     onClickShow() {
+        if (!this.data.isLogined) {
+            wx.navigateTo({
+              url: '../login/login',
+            })
+            return
+        }
         this.setData({ show: true });
         console.log("show");
       },
@@ -142,6 +163,12 @@ Page({
           })
       },
       goToChangeName(){
+        if (!this.data.isLogined) {
+            wx.navigateTo({
+              url: '../login/login',
+            })
+            return
+        }
           wx.navigateTo({
             url: '../changeName/changeName?user_name=' + this.data.info.user_name,
           })
@@ -156,6 +183,11 @@ Page({
      */
     onLoad(options) {
         this.getComments();
+        this.storeBindings = createStoreBindings(this,{
+            store,
+            fields: ['isLogined'],
+            actions: ['login'],
+        })
     },
 
     /**
@@ -187,7 +219,7 @@ Page({
      * 生命周期函数--监听页面卸载
      */
     onUnload() {
-
+        this.storeBindings.destoryStoreBindings();
     },
 
     /**

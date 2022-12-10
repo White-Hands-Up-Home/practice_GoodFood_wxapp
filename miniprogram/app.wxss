@@ -26,3 +26,7 @@ page {
   justify-content: flex-start;
   height: 100%;
 }
+input{
+    padding-left: 30rpx;
+}
+
