@@ -150,4 +150,16 @@ image {
   background-color: red;
 }
 
+.stars{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: red; */
+}
+.stars image{
+    width: 50rpx;
+    height: 50rpx;
+    margin: 0;
+}
+
 

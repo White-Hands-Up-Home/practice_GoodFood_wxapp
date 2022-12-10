@@ -15,14 +15,21 @@
     </label>
 </view>
 <scroll-view class="shops" scroll-y>
-    <view class="shop" wx:for="{{info}}" wx:key="index" bindtap="jumpToShopsDetail" data-name="{{item.shop_name}}"
-    data-comment="{{item.comment_count}}" data-score="{{item.shop_score}}">
+    <view class="shop" wx:for="{{info}}" wx:key="index" bindtap="jumpToShopsDetail" data-name="{{item.shop_name}}" data-comment="{{item.comment_count}}" data-score="{{item.shop_score}}">
         <view class="shop-image-container">
             <image src="./shop-images/shop-image.png"></image>
         </view>
         <view class="shop-info">
             <view class="shop-info-detail">{{item.shop_name}}</view>
-            <view class="shop-info-detail">{{item.shop_score}}</view>
+            <view class="shop-info-detail">
+                <view class="stars">
+                    <image src="../../images/xrxmui(1)/svg/star-{{item.shop_score>=1?'fill':'no-fill'}}.svg"></image>
+                    <image src="../../images/xrxmui(1)/svg/star-{{item.shop_score>=3?'fill':'no-fill'}}.svg"></image>
+                    <image src="../../images/xrxmui(1)/svg/star-{{item.shop_score>=5?'fill':'no-fill'}}.svg"></image>
+                    <image src="../../images/xrxmui(1)/svg/star-{{item.shop_score>=7?'fill':'no-fill'}}.svg"></image>
+                    <image src="../../images/xrxmui(1)/svg/star-{{item.shop_score>=9?'fill':'no-fill'}}.svg"></image>
+                </view>
+            </view>
             <view class="shop-info-detail comment-count">{{item.comment_count}}条评论</view>
         </view>
         <view class="image-container">

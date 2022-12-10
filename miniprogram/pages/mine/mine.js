@@ -6,6 +6,7 @@ Page({
      */
     data: {
         user_img:"../../images1/image/user-img.png",
+        defalutLiked:false,
         show:false,
         if_ChiHu:true,
         school_num:20223000000,
@@ -15,58 +16,57 @@ Page({
         info: {
             image: "http://dummyimage.com/400x400",
             user_name: "阿尼亚",
-            comment: [{
-                    "user_name": "武娜",
-                    "shop_name": "斗但次老法",
-                    "score": 9,
-                    "image_1": "http://dummyimage.com/400x400",
-                    "content": "eu",
-                    "image_2": "http://dummyimage.com/400x400",
-                    "like_num": 81,
-                    "huitie_num": 84
-                },
-                {
-                    "user_name": "钱秀英",
-                    "shop_name": "指信器流么",
-                    "score": 7,
-                    "image_1": "http://dummyimage.com/400x400",
-                    "content": "consequat",
-                    "image_2": "http://dummyimage.com/400x400",
-                    "like_num": 68,
-                    "huitie_num": 12
-                },
-                {
-                    "user_name": "罗丽",
-                    "shop_name": "查住毛别治",
-                    "score": 6,
-                    "image_1": "http://dummyimage.com/400x400",
-                    "content": "cillum consectetur",
-                    "image_2": "http://dummyimage.com/400x400",
-                    "like_num": 88,
-                    "huitie_num": 28
-                },
-                {
-                    "user_name": "高娟",
-                    "shop_name": "养立只十确关身",
-                    "score": 4,
-                    "image_1": "http://dummyimage.com/400x400",
-                    "content": "dolore",
-                    "image_2": "http://dummyimage.com/400x400",
-                    "like_num": 10,
-                    "huitie_num": 3
-                },
-                {
-                    "user_name": "陆秀兰",
-                    "shop_name": "量心无民不验任",
-                    "score": 2,
-                    "image_1": "http://dummyimage.com/400x400",
-                    "content": "anim nisi aliqua eu",
-                    "image_2": "http://dummyimage.com/400x400",
-                    "like_num": 72,
-                    "huitie_num": 92
-                }
+            comment: [
             ]
         },
+    },
+    getComments(){
+        wx.request({
+          url: 'https://mock.apifox.cn/m1/1961063-0-default/user/',
+          method:"GET",
+          success:(res)=>{
+            // console.log(res);
+            res.data.comment.forEach((comment)=>{
+                comment.isLiked = this.data.defalutLiked
+            })
+            console.log(res.data.comment);
+            this.setData({
+                "info.comment":[...this.data.info.comment,...res.data.comment],
+            })
+          },
+          complete:()=>{
+              wx.hideLoading({
+                success: (res) => {},
+              })
+          }
+        })
+        
+
+    },
+    onMyEvent: function (event) {
+        // console.log(event);
+        const this_comment_Index = this.data.info.comment.findIndex((item) =>
+            item.comment_id == event.detail.this_id
+        )
+        // console.log(this_comment);
+        console.log(this_comment_Index);
+        if (this.data.info.comment[this_comment_Index].isLiked) 
+        {
+            this.setData({
+                [`info.comment[${this_comment_Index}].isLiked`]: false,
+                [`info.comment[${this_comment_Index}].comment_like_count`]:this.data.info.comment[this_comment_Index].comment_like_count - 1
+            });
+            // this_comment.isLiked=false;
+        } else 
+        {
+            this.setData({
+                [`info.comment[${this_comment_Index}].isLiked`]: true,
+                [`info.comment[${this_comment_Index}].comment_like_count`]:this.data.info.comment[this_comment_Index].comment_like_count + 1
+            });
+            // this_comment.isLiked=true;
+        }
+        // console.log(this_comment);
+        // console.log(this.data.info);
     },
     changePhoto(){
         wx.chooseImage({
@@ -107,28 +107,38 @@ Page({
       submitSchoolNum(e){
           console.log(e.detail.value.input);
           wx.showLoading({
-            title: 'ok',
+            title: '认证中',
           })
           wx.request({
-            url: '',
+            url: 'https://mock.apifox.cn/m1/1961063-0-default/user/renzheng',
             method:"POST",
             data:{
                 id:e.detail.value.input
             },
-            success:()=>{
-                console.log("success");
+            success:(res)=>{
+                console.log(res.data);
+                this.setData({
+                    "is_ChiHu.is2":res.data.is2
+                })
+                
             },
             fail:()=>{
-                console.log("fail")
+                console.log("fail");
             },
             complete:()=>{
                 wx.hideLoading({
-                    success: (res) => {},
+                    success: (res) => {
+                        if (this.data.is_ChiHu.is2==false) {
+                            wx.showToast({
+                              title: '认证失败',
+                              icon:"error",
+                              duration:1500,
+                            })
+                        }
+                    },
                   })
+                  
             }
-          })
-          this.setData({
-              "is_ChiHu.is2":true
           })
       },
       goToChangeName(){
@@ -137,12 +147,15 @@ Page({
           })
       },
       noop() {},
+      judge(){
+         
+      },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        this.getComments();
     },
 
     /**
@@ -181,14 +194,16 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh() {
-
     },
 
     /**
      * 页面上拉触底事件的处理函数
      */
     onReachBottom() {
-
+        wx.showLoading({
+          title: '数据加载中',
+        })
+        this.getComments();
     },
 
     /**

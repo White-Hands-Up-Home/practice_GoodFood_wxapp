@@ -5,6 +5,9 @@ Page({
      * 页面的初始数据
      */
     data: {
+        btnColor:"#74665d",
+        btnText:"收藏店铺",
+        isCollected: false,
         defaultIsLiked: false,
         // isShow:true,
         like_svg: "../../images1/image/like.svg",
@@ -14,6 +17,28 @@ Page({
         data_count: 12,
         info: []
 
+    },
+    collection(){
+        if (this.data.isCollected) {
+            this.setData({
+                btnColor:"#74665d",
+                btnText:"收藏店铺",
+                isCollected:false
+
+            })
+        }else{
+            this.setData({
+                btnColor:"#EF6938",
+                btnText:"已经收藏",
+                isCollected:true
+                
+            })
+        }
+    },
+    goToComment(){
+        wx.switchTab({
+          url: '../publish/publish',
+        })
     },
     onMyEvent: function (event) {
         // console.log(event);
@@ -42,14 +67,14 @@ Page({
     },
     getComments() {
         wx.request({
-            url: 'http://127.0.0.1:4523/m1/1961063-0-default/shop/details',
+            url: 'https://mock.apifox.cn/m1/1961063-0-default/shop/details',
             method: "GET",
             success: (res) => {
-                res.data.forEach((comment) => {
+                res.data.data.forEach((comment) => {
                     comment.isLiked = this.data.defaultIsLiked;
                 });
                 this.setData({
-                    info: [...this.data.info, ...res.data],
+                    info: [...this.data.info, ...res.data.data],
                 })
             },
             complete: () => {

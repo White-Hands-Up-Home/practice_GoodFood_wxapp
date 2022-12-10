@@ -4,7 +4,7 @@
         <view class="user-info">
             <view class="head-pic" bindtap="changePhoto">
                 <image src="{{user_img}}" mode="aspectFill"></image>
-                <image class="v-prove" src="../../images1/image/v认证.png" wx:if="{{if_ChiHu}}"></image>
+                <image class="v-prove" src="../../images1/image/v认证.png" wx:if="{{is_ChiHu.is2}}"></image>
             </view>
             <view class="infos">
                 <text bindtap="goToChangeName">{{info.user_name}}</text>
@@ -19,7 +19,7 @@
     </view>
     <view class="comments">
         <view class="text">我的评价</view>
-        <comment-card wx:for="{{info.comment}}" wx:key="index" shop_name="{{item.shop_name}}" for_shop_score="{{item.score}}" for_user_name="{{info.user_name}}" for_like_count="{{item.like_num}}" for_review_count="{{item.huitie_num}}" if_image_url_1="{{item.image_1!=null}}" if_image_url_2="{{item.image_2!=null}}" if_image_url_3="{{item.image_3!=null}}" for_comment_content="{{item.content}}"></comment-card>
+        <comment-card bind:myevent="onMyEvent" wx:for="{{info.comment}}" wx:key="index" shop_name="{{item.shop_name}}" for_shop_score="{{item.comment_score}}" for_user_name="{{info.user_name}}" for_like_count="{{item.comment_like_count}}" for_review_count="{{item.comment_review_count}}" if_image_url_1="{{item.image_1!=null}}" if_image_url_2="{{item.image_2!=null}}" if_image_url_3="{{item.image_3!=null}}" for_comment_content="{{item.comment_content}}" for_like_url="{{item.isLiked?'../../images1/image/like_fill.png':'../../images1/image/like.svg'}}" for_comment_id="{{item.comment_id}}"></comment-card>
     </view>
 </view>
 <van-overlay show="{{ show }}" bind:click="onClickHide">

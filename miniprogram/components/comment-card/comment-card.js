@@ -35,7 +35,7 @@ Component({
     methods: {
         changeLike(e){
             const this_id = e.currentTarget.id;
-            console.log(this_id);
+            // console.log(this_id);
             this.triggerEvent('myevent',{
                 this_id
             });

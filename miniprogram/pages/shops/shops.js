@@ -35,12 +35,12 @@ Page({
     },
     getInfo(){
         wx.request({
-            url: 'http://127.0.0.1:4523/m1/1961063-0-default/shop',
+            url: 'https://mock.apifox.cn/m1/1961063-0-default/shop',
             method:"GET",
             success:(res)=>{
-               // console.log(res);
+               console.log(res);
                this.setData({
-                   info:[...this.data.info,...res.data]
+                   info:[...this.data.info,...res.data.data]
                })
             },
             complete:()=>{
@@ -71,8 +71,6 @@ Page({
     onShow() {
         this.getInfo();
  
-
-
     },
 
     /**
