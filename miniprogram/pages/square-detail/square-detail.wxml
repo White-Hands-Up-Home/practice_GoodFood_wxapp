@@ -61,12 +61,12 @@
 
 
     <view class="comment-icon">
-        <image src="../../images1/image/message.svg" bindtap="goToComment"></image>
+        <image src="../../images1/image/like.svg" bindtap="goToComment"></image>
         <text>10</text>
     </view>
 
     <view class="comment-icon">
-        <image src="../../images1/image/message.svg" bindtap="goToComment"></image>
+        <image src="../../images/xrxmui(1)/svg/star-no-fill.svg" bindtap="goToComment"></image>
         <text>10</text>
     </view>
 

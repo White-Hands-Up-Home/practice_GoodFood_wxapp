@@ -132,14 +132,16 @@ padding-bottom: 10rpx;
     z-index: 10;
     height: 80rpx;
     display: flex;
+    padding: 20rpx;
 }
 
 .input{
     height: 50rpx;
     width: 300rpx;
-    color: rgba(172, 145, 105, 0.699);
-    border-radius: 50%;
+    background-color: rgba(172, 145, 105, 0.699);
+    border-radius: 50px;
     padding: 10rpx;
+    margin-right: 20rpx;
 }
 
 .comment-icon image{
