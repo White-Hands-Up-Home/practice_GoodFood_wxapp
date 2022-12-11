@@ -17,10 +17,9 @@ Page({
             is2: false
           },
         info: {
-            image: "http://dummyimage.com/400x400",
+            // image: "http://dummyimage.com/400x400",
             user_name: "阿尼亚",
-            comment: [
-            ]
+            comment: []
         },
     },
     getComments(){

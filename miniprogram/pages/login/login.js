@@ -28,6 +28,11 @@ Page({
           url: '../square/square',
         })
     },
+    skip(){
+        wx.switchTab({
+            url: '../square/square',
+          })
+    },
 
     /**
      * 生命周期函数--监听页面初次渲染完成

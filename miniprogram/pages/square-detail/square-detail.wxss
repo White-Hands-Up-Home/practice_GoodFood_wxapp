@@ -1,18 +1,148 @@
-.box{
-    background-color: #ffc8b4;
-    width: auto;
-    height: 40%;
+.user-info {
+    height: 98rpx;
+    /* background-color: red; */
+    color: #707070;
+    font-size: 29.75rpx;
+    display: flex;
+    padding-bottom: 10rpx;
+    border-bottom: solid 1px grey;
 }
 
-  .open-data-userAvatarUrl {
-    width: 160rpx;
-    height: 160rpx;
+.user-info text {
+    height: 98rpx;
+    line-height: 126rpx;
+    font-size: large;
     display: block;
-    overflow: hidden;
+}
+
+.user-info image {
     border-radius: 50%;
-    margin: 40rpx auto;
+    width: 78.5rpx;
+    height: 78.5rpx;
+    margin-left: 36.25rpx;
+    margin-top: 19.25rpx;
+    margin-right: 25rpx;
+}
+
+.shop-info {
+    display: flex;
+    justify-content: flex-start;
+    height: 83rpx;
+    font-size: 35rpx;
+    line-height: 83rpx;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
   }
-  .open-data-userNickName{
-    max-width: 105rpx;
-    display:block;
+  .shop-info text {
+    margin-right: 10rpx;
+    font-weight: 600;
   }
+  .shop-info image {
+    width: 70rpx;
+    height: 70rpx;
+    margin-left: 10rpx;
+    margin-right: 5rpx;
+    margin-top: 10rpx;
+  }
+ 
+  .stars{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: red; */
+}
+.shop-info .stars image{
+    width: 50rpx;
+    height: 50rpx;
+    margin: 0;
+}
+
+.swiper-item image {
+    width: 80%;
+    height: 100%;
+    display:flex;
+	justify-content:center;
+    align-items:center;
+}
+
+.time-location{
+    padding: 6rpx;
+    border-bottom: 1px solid grey;
+}
+
+.time-location text{
+    color: #707070;
+}
+
+.sum{
+padding-bottom: 10rpx;
+}
+
+.sum text{
+    color: #707070;
+}
+
+.comments{
+    width: 704.5rpx;
+    margin: 0 auto;
+    border-radius: 35rpx;
+    margin-bottom: 25rpx;
+    box-shadow: 0px 10px 10px 1px rgba(81, 81, 81, 0.16);
+    background-color: #fff1e6;
+}
+
+.comments-user{
+    height: 98rpx;
+    color: #707070;
+    font-size: 29.75rpx;
+    display: flex;
+}
+
+.comments-user image{
+    border-radius: 50%;
+    width: 59.5rpx;
+    height: 59.5rpx;
+    margin-left: 54.25rpx;
+    margin-top: 19.25rpx;
+    margin-right: 15rpx;
+}
+
+.comments-user text{
+    height: 98rpx;
+    line-height: 98rpx;
+    display: block;
+}
+
+.content{
+    display: flex;
+}
+
+.comments-content{
+    width: 70%;
+    padding: 26rpx; 
+    padding-top: 0;
+}
+
+.comments-like image{
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.foot{
+    z-index: 10;
+    height: 80rpx;
+    display: flex;
+}
+
+.input{
+    height: 50rpx;
+    width: 300rpx;
+    color: rgba(172, 145, 105, 0.699);
+    border-radius: 50%;
+    padding: 10rpx;
+}
+
+.comment-icon image{
+    width: 60rpx;
+    height: 60rpx;
+}

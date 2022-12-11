@@ -1,21 +1,77 @@
 <!--pages/square-detail/square-detail.wxml-->
-<view class="header" style='margin:10rpx auto;text-align:center'>
-  <open-data class="open-data-userAvatarUrl" type="userAvatarUrl"></open-data>
-  <view class="Name" style='margin:40rpx auto;text-align:center;display:flex;justify-content: center;'>
-    <open-data class="open-data-userNickName line1" type="userNickName" lang="zh_CN"></open-data>
-  </view>    
+<view class="user-info">
+    <!-- {{item.user.user_profile_photo_url}} -->
+    <image src="../../images1/image/user-img.png"></image>
+    <text>name666</text>
 </view>
- 
 
- 
+<view class="shop-info">
+    <image src="../../images1/image/coordinates_fill.svg"></image>
+    <text>店铺名称</text>
+    <view class="stars">
+        <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=1?'fill':'no-fill'}}.svg"></image>
+        <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=3?'fill':'no-fill'}}.svg"></image>
+        <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=5?'fill':'no-fill'}}.svg"></image>
+        <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=7?'fill':'no-fill'}}.svg"></image>
+        <image src="../../images/xrxmui(1)/svg/star-{{for_shop_score>=9?'fill':'no-fill'}}.svg"></image>
+    </view>
+</view>
 
-<view>图标</view>
-<swiper>轮播图</swiper>
-<view>日期</view>
-<view>评论数</view>
+<view class="user-image">
+    <swiper>
+        <swiper-item>
+            <image src="../../images1/image/food.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images1/image/food.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="../../images1/image/food.png"></image>
+        </swiper-item>
+    </swiper>
+</view>
 
-<scroll-view class="box" scroll-y>
-  <view class="list">aaa</view>
-</scroll-view>
+<view class="time-location">
+    <text>11-05 武汉</text>
+</view>
 
-<view>底部</view>
+<view class="sum">
+    <text>共由188条评论</text>
+</view>
+
+<view class="comments">
+    <view class="comments-user">
+        <image src="../../images1/image/user-img.png"></image>
+        <text>name666</text>
+    </view>
+    <view class="content">
+        <view class="comments-content">
+            这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论
+        </view>
+        <view class="comments-like">
+            <image src="../../images/xrxmui(1)/svg/like.svg" bindtap="changeLike"></image>
+            <text>10</text>
+        </view>
+    </view>
+</view>
+
+<view class="foot">
+    <input class="input" placeholder="说点什么..."></input>
+
+
+
+    <view class="comment-icon">
+        <image src="../../images1/image/message.svg" bindtap="goToComment"></image>
+        <text>10</text>
+    </view>
+
+    <view class="comment-icon">
+        <image src="../../images1/image/message.svg" bindtap="goToComment"></image>
+        <text>10</text>
+    </view>
+
+    <view class="comment-icon">
+        <image src="../../images1/image/message.svg" bindtap="goToComment"></image>
+        <text>10</text>
+    </view>
+</view>

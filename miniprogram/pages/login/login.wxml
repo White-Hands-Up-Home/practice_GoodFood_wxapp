@@ -8,6 +8,6 @@
         <input class="input" type="number" placeholder="输入学号" placeholder-class="placeholder" />
         <input class="input" type="text" placeholder="输入密码" placeholder-class="placeholder" />
         <button id="button" bindtap="goToFirst">登入</button>
-        <view class="skip" bindtap="goToFirst">暂不登录</view>
+        <view class="skip" bindtap="skip">暂不登录</view>
     </form>
 </view>
