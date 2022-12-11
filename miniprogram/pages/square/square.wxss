@@ -8,8 +8,8 @@
 
 .box{
     background-color: #FFE3CC;
-    width: auto;
-    height: 96%;
+    /* width: auto; */
+    /* height: 96%; */
 }
 
 .list{

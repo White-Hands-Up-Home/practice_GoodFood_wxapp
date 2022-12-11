@@ -4,6 +4,6 @@
     <checkbox class="checkrideo"></checkbox>
 </label>
 
-<scroll-view class="box" scroll-y>
+<!-- <scroll-view class="box" scroll-y> -->
     <comment-card bind:myevent="onMyEvent" wx:for="{{info.comment}}" wx:key="index" shop_name="{{item.shop_name}}" for_shop_score="{{item.comment_score}}" for_user_name="{{info.user_name}}" for_like_count="{{item.comment_like_count}}" for_review_count="{{item.comment_review_count}}" if_image_url_1="{{item.image_1!=null}}" if_image_url_2="{{item.image_2!=null}}" if_image_url_3="{{item.image_3!=null}}" for_comment_content="{{item.comment_content}}" for_like_url="{{item.isLiked?'../../images1/image/like_fill.png':'../../images1/image/like.svg'}}" for_comment_id="{{item.comment_id}}"></comment-card>
-</scroll-view>
+<!-- </scroll-view> -->

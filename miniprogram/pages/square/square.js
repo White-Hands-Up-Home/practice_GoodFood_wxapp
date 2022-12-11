@@ -145,7 +145,12 @@ Page({
      * 页面上拉触底事件的处理函数
      */
     onReachBottom: function() {
-
+        console.log("hh")
+        wx.showLoading({
+            title: '加载数据中',
+        })
+        this.getComments();
+        this.getComments();
     },
 
     /**
