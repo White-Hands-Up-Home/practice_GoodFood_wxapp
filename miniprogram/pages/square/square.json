@@ -1,7 +1,8 @@
 {
 
     "usingComponents": {
-      "star": "/components/star/star"
+      "star": "/components/star/star",
+      "comment-card":"../../components/comment-card/comment-card"
     },
     "navigationBarTitleText": "发布评价",
     "component": true

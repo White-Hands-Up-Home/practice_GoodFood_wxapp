@@ -5,52 +5,5 @@
 </label>
 
 <scroll-view class="box" scroll-y>
-<view class="stores" wx:for="{{stores}}" wx:key="index"> 
-  <view class="list">
-
-   <view class="head">
-     <image class="location" src="../../images/xrxmui(1)/svg/coordinates_fill.svg"></image>
-     <text class="storeName" bindtap="goToDetail">店铺名称</text>
-     <image class="v-prove" src="../../images1/image/v认证.png" ></image>
-   </view>
-    
-    <!-- 星星图形 -->
-
-
-    <scroll-view class="photos" scroll-x="true">
-       <view class="photo-list">
-          <!-- 链接待添加 {{item.image_1}}-->
-          <image src="../../images1/image/food.png"></image>
-          <image src="../../images1/image/food.png"></image>
-          <image src="../../images1/image/food.png"></image>
-       </view>
-    </scroll-view>
-
-    <!-- 头像及ID -->
-    <view class="user-info">
-        <!-- {{item.user.user_profile_photo_url}} -->
-        <image src="../../images1/image/user-img.png"></image>
-        <text>阿尼亚</text>
-    </view>
-
-    <!-- 评论内容 -->
-    <view class="comment-content">
-        这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论这是评论
-    </view>
-
-    <view class="comment-infos">
-                <!-- 喜欢，点赞 -->
-                <view class="comment-info">
-                    <image src="../../images1/image/like.svg" bindtap="changeLike" data-count="{{item.like_num}}"></image>
-                    <text>100</text>
-                </view>
-                <!-- 评论 -->
-                <view class="comment-info">
-                    <image src="../../images1/image/message.svg" bindtap="goToDetail"></image>
-                    <text>100</text>
-                </view>
-    </view>
-
-  </view>
-</view>
+    <comment-card bind:myevent="onMyEvent" wx:for="{{info.comment}}" wx:key="index" shop_name="{{item.shop_name}}" for_shop_score="{{item.comment_score}}" for_user_name="{{info.user_name}}" for_like_count="{{item.comment_like_count}}" for_review_count="{{item.comment_review_count}}" if_image_url_1="{{item.image_1!=null}}" if_image_url_2="{{item.image_2!=null}}" if_image_url_3="{{item.image_3!=null}}" for_comment_content="{{item.comment_content}}" for_like_url="{{item.isLiked?'../../images1/image/like_fill.png':'../../images1/image/like.svg'}}" for_comment_id="{{item.comment_id}}"></comment-card>
 </scroll-view>

@@ -107,32 +107,5 @@
     display: block;
 }
 
-.comment-content{
-    height: 130rpx;
-    line-height: 98rpx;
-    border-bottom: 2px solid lightslategrey;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;      
-}
-
-.comment-infos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 87.5rpx;
-  }
-
-.comment-info {
-    display: flex;
-    align-items: center;
-    font-size: 28rpx;
-    color: #707070;
-  }
-
-.comment-info image {
-    width: 60rpx;
-    height: 60rpx;
-  }
 
   
